@@ -10,4 +10,8 @@ export const GlobalStyle = createGlobalStyle`
   div {
     width: 100%;
   }
+
+  #___gatsby > * {
+    display:flex;
+  }
 `;

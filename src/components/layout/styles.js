@@ -4,6 +4,7 @@ export const ContainerMenu = styled.aside`
     width: 20%;
     background-color: #ffecec;
     padding-top: 50px;
+    height: 100vh;
 
     & a {
         text-decoration: none;
