@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     height: calc(100vh - 15px);
+    font-family: 'Open Sans', 'Helvetica Neue', Ubuntu;
   }
 
   div {
