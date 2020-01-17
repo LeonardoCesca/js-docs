@@ -1,31 +1,31 @@
-import React, { useEffect } from "react"
-import { Link, navigate } from "gatsby"
+import React, { useEffect } from 'react'
+import { navigate } from 'gatsby'
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
-import { Container, ContainerMenu, Linkao, Title, ContainerContent } from './styles';
+import { Container, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink } from './styles';
 
-const ListLink = props => (
-  <Linkao>
-    <Link to={props.to}>{props.children}</Link>
-  </Linkao>
+const SidebarItems = props => (
+  <ContainerLink>
+    <StyledLink to={props.to}>{props.children}</StyledLink>
+  </ContainerLink>
 )
 
 export default ({ children }) => (
   useEffect(() => {
-    navigate("/home/")
+    navigate('/home/')
   }, []),
   (
     <Container>
       <GlobalStyle />
       <ContainerMenu>
-        <ListLink to="/home/">Home</ListLink>
         <Title>JavaScript - Introdução</Title>
-        <ListLink to="/destructuring/">Destructuring</ListLink>
+        <SidebarItems to='/home/'>Home</SidebarItems>
+        <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
       </ContainerMenu>
       <ContainerContent>
         {children}
       </ContainerContent>
-      </Container>
+    </Container>
   )
 )
