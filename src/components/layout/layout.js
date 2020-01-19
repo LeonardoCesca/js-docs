@@ -5,6 +5,8 @@ import { GlobalStyle } from '../../theme/globalStyle';
 
 import { Container, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink } from './styles';
 
+import Footer from '../footer/index';
+
 const SidebarItems = props => (
   <ContainerLink>
     <StyledLink to={props.to}>{props.children}</StyledLink>
@@ -22,6 +24,7 @@ export default ({ children }) => (
         <Title>JavaScript - Introdução</Title>
         <SidebarItems to='/home/'>Home</SidebarItems>
         <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
+        <Footer />
       </ContainerMenu>
       <ContainerContent>
         {children}

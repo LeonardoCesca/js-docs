@@ -7,7 +7,8 @@ export const ContainerMenu = styled.aside`
     background-color: #282C35;
     border-right: 2px solid #FF9900;
     padding-top: 50px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 119px);
+    overflow: auto;
 
     & a {
         text-decoration: none;

@@ -13,8 +13,8 @@ export default function Destructuring ({data}) {
         {data.markdownRemark.frontmatter.subtitle}
       </DestructuringParagraph>
       <DestructuringIframe>
-        <iframe width='1024px;' height='473px;' title="frame"
-          src="https://carbon.now.sh/embed?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=const%2520carro%2520%253D%2520%257B%250A%2520%2520marca%253A%2520'Fiat'%252C%250A%2520%2520ano%253A%25202018%252C%250A%2520%2520portas%253A%25204%252C%250A%257D%250A%250Aconst%2520%257Bmarca%252C%2520ano%257D%2520%253D%2520carro%253B%250A%250Aconsole.log(marca)%253B%2520%252F%252F%2520Fiat%250Aconsole.log(ano)%253B%2520%252F%252F%25202018%250A">
+        <iframe width='1224px;' height='473px;' title="frame"
+          src="https://carbon.now.sh/embed?bg=rgba(40%2C44%2C53%2C1)&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=4x&wm=false&code=const%2520carro%2520%253D%2520%257B%250A%2520%2520marca%253A%2520'Fiat'%252C%250A%2520%2520ano%253A%25202018%252C%250A%2520%2520portas%253A%25204%252C%250A%257D%250A%250Aconst%2520%257Bmarca%252C%2520ano%257D%2520%253D%2520carro%253B%250A%250Aconsole.log(marca)%253B%2520%252F%252F%2520Fiat%250Aconsole.log(ano)%253B%2520%252F%252F%25202018%250A">
         </iframe>
       </DestructuringIframe>
     </DestructuringContent>
