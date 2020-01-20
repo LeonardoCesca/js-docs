@@ -24,7 +24,13 @@ export default ({ children }) => (
         <Title>JavaScript - Introdução</Title>
         <SidebarItems to='/home/'>Home</SidebarItems>
         <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
-        <Footer />
+        <Footer 
+          made="Made with"
+          leo="Leonardo Cesca"
+          leo_github="https://github.com/LeonardoCesca"
+          bruno="Bruno Ramires"
+          bruno_github="https://github.com/brunormferreira"
+         />
       </ContainerMenu>
       <ContainerContent>
         {children}

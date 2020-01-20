@@ -4,10 +4,11 @@ import { Link } from 'gatsby';
 
 export const ContainerMenu = styled.aside`
     width: 20%;
+    height: calc(100vh - 195px);
     background-color: #282C35;
     border-right: 2px solid #FF9900;
     padding-top: 50px;
-    height: calc(100vh - 119px);
+    padding-bottom: 20px;
     overflow: auto;
 
     & a {
