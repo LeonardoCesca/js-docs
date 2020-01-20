@@ -19,6 +19,15 @@ export const ContainerMenu = styled.aside`
         letter-spacing: 0.1em;
         text-decoration: none;
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+`;
+
+export const Hamburger = styled.div`
+    background: url('https://www.iconsdb.com/icons/preview/white/hamburger-xxl.png') no-repeat;
+    width: 80px;
 `;
 
 export const ContainerLink = styled.div`
