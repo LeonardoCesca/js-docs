@@ -29,7 +29,6 @@ export const ContainerMenu = styled.aside`
       padding-top: 50px;
       padding-bottom: 20px;
       overflow: auto;
-
     }
 `;
 
@@ -82,4 +81,42 @@ export const Title = styled.p`
     color: #FFFFFF;
     text-decoration: underline;
     text-decoration-color: #FF9900;
+`;
+
+export const CloseButton = styled.span`
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    background-color: #FFF;
+
+    @media (max-width: 768px) {
+      height: 32px;
+      right: 10px;
+      top: 10px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 33px;
+      width: 2px;
+      background-color: #333;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
 `;

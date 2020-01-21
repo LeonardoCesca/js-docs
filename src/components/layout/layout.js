@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
           bruno="Bruno Ramires"
           bruno_github="https://github.com/brunormferreira"
           />
+          <CloseButton></CloseButton>
       </ContainerMenu>
         ): <Hamburger onClick={() => setIsVisible(!isVisible)} />  } 
       <ContainerContent>
