@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           />
           <CloseButton></CloseButton>
       </ContainerMenu>
-        ): <Hamburger onClick={() => setIsVisible(!isVisible)} />  } 
+        ): <Hamburger onClick={() => setIsVisible(!isVisible)} />} 
       <ContainerContent>
         {children}
       </ContainerContent>
