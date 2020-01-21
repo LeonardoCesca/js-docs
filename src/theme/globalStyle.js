@@ -14,5 +14,6 @@ export const GlobalStyle = createGlobalStyle`
 
   #___gatsby > * {
     display:flex;
+    background: rgb(40, 44, 53);
   }
 `;

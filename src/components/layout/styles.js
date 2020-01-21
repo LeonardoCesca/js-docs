@@ -37,6 +37,8 @@ export const Hamburger = styled.div`
     background-size: 32px 57px;
     background-position: 10px top;
     width: 80px;
+    height: 50px;
+    cursor: pointer;
 
     @media (max-width: 768px) {
       width: 60px;
