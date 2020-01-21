@@ -34,7 +34,8 @@ export const ContainerMenu = styled.aside`
 `;
 
 export const Hamburger = styled.div`
-    background: rgb(40, 44, 53) url("https://img.icons8.com/color/48/000000/mcdonalds.png") no-repeat;
+    background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
+    background-size: 32px 57px;
     width: 80px;
 
     @media (max-width: 768px) {
@@ -48,6 +49,7 @@ export const ContainerLink = styled.div`
 
 export const Container = styled.div`
     display: flex;
+    justify-content: center;
     height: 100vh;
 `;
 

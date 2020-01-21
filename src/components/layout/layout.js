@@ -3,7 +3,7 @@ import { navigate } from 'gatsby'
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
-import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink } from './styles';
+import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton } from './styles';
 
 import Footer from '../footer/index';
 
