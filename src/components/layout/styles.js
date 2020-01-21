@@ -50,9 +50,12 @@ export const Hamburger = styled.div`
     background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
     background-size: 32px 57px;
     background-position: 10px top;
-    width: 80px;
+    width: 56px;
     height: 50px;
+    margin-bottom: 2px;
+    padding: 3px 0px;
     cursor: pointer;
+    border: 2px solid #FF9900;
 
     @media (max-width: 768px) {
       width: 60px;
@@ -73,6 +76,19 @@ export const ContainerContent = styled.div`
     display: flex;
     height: 100vh;
     overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+      padding: 10px 0;
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgb(40, 44, 53);
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 153, 0);
+      border-radius: 20px;
+    }
 `;
 
 export const StyledLink = styled(props => <Link {...props} />)`
