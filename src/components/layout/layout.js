@@ -13,18 +13,6 @@ const SidebarItems = props => (
   </ContainerLink>
 )
 
-function getWidth() {
-  return Math.max(
-    document.body.scrollWidth,
-    document.documentElement.scrollWidth,
-    document.body.offsetWidth,
-    document.documentElement.offsetWidth,
-    document.documentElement.clientWidth
-  );
-}
-
-console.log(getWidth());
-
 const Layout = ({ children }) => {
   
   const [isVisible, setIsVisible] = useState(true)
