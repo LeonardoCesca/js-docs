@@ -14,8 +14,7 @@ const SidebarItems = props => (
 )
 
 const Layout = ({ children }) => {
-  
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
     navigate('/home/')
