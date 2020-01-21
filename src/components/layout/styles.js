@@ -23,7 +23,7 @@ export const ContainerMenu = styled.aside`
     @media (max-width: 768px) {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 195px);
+      height: calc(100vh - 191px);
       background-color: #282C35;
       border-right: 2px solid #FF9900;
       padding-top: 50px;
@@ -36,6 +36,7 @@ export const ContainerMenu = styled.aside`
 export const Hamburger = styled.div`
     background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
     background-size: 32px 57px;
+    background-position: 10px top;
     width: 80px;
 
     @media (max-width: 768px) {
