@@ -8,6 +8,10 @@ export const FooterContent = styled.footer`
     border-right: 2px solid #FF9900;
     background-color: #fff;
     color: #000;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const FooterText = styled.p` 

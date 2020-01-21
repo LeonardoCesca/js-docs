@@ -21,12 +21,20 @@ export const ContainerMenu = styled.aside`
     }
 
     @media (max-width: 768px) {
-      display: none;
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 195px);
+      background-color: #282C35;
+      border-right: 2px solid #FF9900;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      overflow: auto;
+
     }
 `;
 
 export const Hamburger = styled.div`
-    background: url('https://www.iconsdb.com/icons/preview/white/hamburger-xxl.png') no-repeat;
+    background: rgb(40, 44, 53) url("https://img.icons8.com/color/48/000000/mcdonalds.png") no-repeat;
     width: 80px;
 `;
 

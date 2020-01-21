@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
   return (
     <Container>
       <GlobalStyle />
-        {isVisible && getWidth() > 768 ? (
+        {isVisible ? (
       <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
           <Title>JavaScript - Introdução</Title>
           <SidebarItems to='/home/'>Home</SidebarItems>
