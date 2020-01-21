@@ -36,6 +36,10 @@ export const ContainerMenu = styled.aside`
 export const Hamburger = styled.div`
     background: rgb(40, 44, 53) url("https://img.icons8.com/color/48/000000/mcdonalds.png") no-repeat;
     width: 80px;
+
+    @media (max-width: 768px) {
+      width: 60px;
+    }
 `;
 
 export const ContainerLink = styled.div`
