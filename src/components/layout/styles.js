@@ -101,18 +101,17 @@ export const Title = styled.p`
 `;
 
 export const CloseButton = styled.span`
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    background-color: #FFF;
+    display: none;
 
     @media (max-width: 768px) {
-      height: 32px;
-      right: 10px;
-      top: 10px;
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      opacity: 0.3;
+      background-color: #FFF;
     }
 
     &:hover {
@@ -121,9 +120,9 @@ export const CloseButton = styled.span`
 
     &:before, &:after {
       position: absolute;
-      left: 15px;
+      left: 9px;
       content: ' ';
-      height: 33px;
+      height: 20px;
       width: 2px;
       background-color: #333;
     }
