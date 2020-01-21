@@ -11,6 +11,19 @@ export const ContainerMenu = styled.aside`
     padding-bottom: 20px;
     overflow: auto;
 
+    ::-webkit-scrollbar {
+      padding: 10px 0;
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgb(40, 44, 53);
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 153, 0);;
+      border-radius: 20px;
+    }
+
     & a {
         text-decoration: none;
         width: 100%;
@@ -83,6 +96,7 @@ export const Title = styled.p`
     color: #FFFFFF;
     text-decoration: underline;
     text-decoration-color: #FF9900;
+    text-align: center;
 `;
 
 export const CloseButton = styled.span`
