@@ -31,6 +31,7 @@ export const ContainerMenu = styled.aside`
         justify-content: center;
         letter-spacing: 0.1em;
         text-decoration: none;
+        margin-bottom: 10px;
     }
 
     @media (max-width: 768px) {
