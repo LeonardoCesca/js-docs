@@ -55,7 +55,7 @@ export const Hamburger = styled.div`
     margin-bottom: 2px;
     padding: 3px 0px;
     cursor: pointer;
-    border: 2px solid #FF9900;
+    border: 2px solid #314366; 
 
     @media (max-width: 768px) {
       width: 60px;
