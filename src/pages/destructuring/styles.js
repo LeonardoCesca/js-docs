@@ -14,7 +14,7 @@ export const DestructuringContent = styled.div`
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 185px);
     }
 `;
 

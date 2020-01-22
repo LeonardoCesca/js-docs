@@ -55,14 +55,18 @@ export const Hamburger = styled.div`
     margin-bottom: 2px;
     padding: 3px 0px;
     cursor: pointer;
-    border: 2px solid #314366;
-    margin: 8px 0 0 8px;
   
     @media (max-width: 768px) {
-      position: absolute;
       width: 54px;
-      left: 10px;
-      top: 7px; 
+    }
+`;
+
+export const ContainerHamburguer = styled.header`
+    width: 56px;
+    border-right: 2px solid #314366;
+
+    @media (max-width: 768px) {
+      width: 54px;
     }
 `;
 

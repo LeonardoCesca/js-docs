@@ -3,7 +3,7 @@ import { navigate } from 'gatsby'
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
-import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton } from './styles';
+import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton, ContainerHamburguer } from './styles';
 
 import Footer from '../footer/index';
 
@@ -37,7 +37,11 @@ const Layout = ({ children }) => {
           />
           <CloseButton></CloseButton>
       </ContainerMenu>
-        ): <Hamburger onClick={() => setIsVisible(!isVisible)} />} 
+        ):(
+          <ContainerHamburguer>
+            <Hamburger onClick={() => setIsVisible(!isVisible)} />
+          </ContainerHamburguer>
+        )} 
       <ContainerContent>
         {children}
       </ContainerContent>
