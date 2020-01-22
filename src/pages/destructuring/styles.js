@@ -33,7 +33,7 @@ export const DestructuringIframe = styled.div`
     
     & iframe {
         width: 100%;
-        height: 28vh;
+        height: 285px;
         border: none;
     }
 `;
