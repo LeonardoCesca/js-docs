@@ -21,13 +21,19 @@ export const DestructuringParagraph = styled.p`
 `
 
 export const DestructuringIframe = styled.div`
-    transform: scale(0.7);
+    width: 45%;
     border: 0; 
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     
     & iframe {
         width: 100%;
+        height: 28vh;
         border: none;
     }
 `;
