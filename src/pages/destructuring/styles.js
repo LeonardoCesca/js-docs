@@ -53,7 +53,7 @@ export const DestructuringIframe = styled.div`
 `;
 
 export const DestructuringLinks = styled.div`
-    padding-top: 10px;
+    padding: 10px 0 10px 0;
 
     & a {
         color: #fff;

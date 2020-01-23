@@ -1,7 +1,11 @@
 import React from 'react';
 
+import { DestructObjContent, DestructObjTitle} from './styles';
+
 export default function DestructuringObjects () {
   return (
-   <h1>Hello</h1>
+    <DestructObjContent>
+      <DestructObjTitle>Destructuring Objects</DestructObjTitle>
+   </DestructObjContent>
   )
 }
