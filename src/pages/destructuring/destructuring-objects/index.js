@@ -14,7 +14,7 @@ export default function DestructuringObjects ({data}) {
         {data.markdownRemark.frontmatter.destructObj[1].subtitle}
       </Paragraph>
       <Iframe>
-        <iframe src="https://jsfiddle.net/leonardocesca/g76nu4qt/13/embedded/js/"></iframe>
+        <iframe src="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/"></iframe>
       </Iframe>
    </Content>
   )
