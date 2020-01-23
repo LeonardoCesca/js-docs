@@ -6,4 +6,5 @@ date: 2020-01-14
 
 destructObj: 
     - title: "Destructuring Objects"
+    - subtitle: Quando possuimos uma profundidade de objetos em grande escala, podemos utilizar a desestruturação de objetos.
 ---

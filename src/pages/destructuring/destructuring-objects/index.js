@@ -4,9 +4,18 @@ import { graphql } from 'gatsby';
 import { Content, Title, Paragraph, Iframe, Links } from '../../styles';
 
 export default function DestructuringObjects ({data}) {
+  console.log(data.markdownRemark.frontmatter.destructObj[1].subtitle)
   return (
     <Content>
-      <Title>{data.markdownRemark.frontmatter.destructObj[0].title}</Title>
+      <Title>
+        {data.markdownRemark.frontmatter.destructObj[0].title}
+      </Title>
+      <Paragraph>
+        {data.markdownRemark.frontmatter.destructObj[1].subtitle}
+      </Paragraph>
+      <Iframe>
+        <iframe src="https://jsfiddle.net/leonardocesca/g76nu4qt/13/embedded/js/"></iframe>
+      </Iframe>
    </Content>
   )
 }
@@ -18,6 +27,7 @@ export const pageQuery = graphql`
       frontmatter {
         destructObj {
           title
+          subtitle
         }
       }
     }

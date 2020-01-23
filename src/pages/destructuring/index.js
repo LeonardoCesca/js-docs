@@ -13,7 +13,7 @@ export default function Destructuring ({data}) {
         {data.markdownRemark.frontmatter.subtitle}
       </Paragraph>
       <Iframe>
-        <iframe src="https://jsfiddle.net/leonardocesca/btk8Le1q/3/embedded/js/"></iframe>
+        <iframe src="https://jsfiddle.net/leonardocesca/btk8Le1q/6/embedded/js/"></iframe>
       </Iframe>
       <Title>{data.markdownRemark.frontmatter.infos}</Title>
       <Links>
