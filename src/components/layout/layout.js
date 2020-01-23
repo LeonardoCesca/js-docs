@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
           <Title>JavaScript - Introdução</Title>
           <SidebarItems to='/'>Home</SidebarItems>
           <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
+          <SidebarItems to='/function/'>Function</SidebarItems>
           <Footer 
           made="Made with"
           leo="Leonardo Cesca"
