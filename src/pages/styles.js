@@ -56,6 +56,7 @@ export const Iframe = styled.div`
         border: none;
 
         @media (max-width: 768px) {
+            height: 100%;
             width: 90%;
         }
     }
