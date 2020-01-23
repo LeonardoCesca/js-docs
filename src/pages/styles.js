@@ -61,3 +61,7 @@ export const Links = styled.div`
         font-style: italic;                
     }
 `;
+
+export const ContentInfos = styled.div`
+    padding-bottom: 25px;
+`;
