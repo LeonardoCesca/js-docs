@@ -16,17 +16,13 @@ const SidebarItems = props => (
 const Layout = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false)
 
-  useEffect(() => {
-    navigate('/home/')
-  }, [])
-
   return (
     <Container>
       <GlobalStyle />
         {isVisible ? (
       <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
           <Title>JavaScript - Introdução</Title>
-          <SidebarItems to='/home/'>Home</SidebarItems>
+          <SidebarItems to='/'>Home</SidebarItems>
           <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
           <Footer 
           made="Made with"
