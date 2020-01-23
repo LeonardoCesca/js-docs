@@ -12,7 +12,9 @@ export const DestructuringContent = styled.div`
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
+        height: calc(100vh - 185px);
     }
 `;
 
@@ -20,10 +22,6 @@ export const DestructuringTitle = styled.h1`
     text-decoration: underline;
     text-decoration-color: #FF9900;
     font-weight: bold;
-
-    @media (max-width: 768px) {
-        padding-top: 26px;
-    }
 `;
 
 export const DestructuringParagraph = styled.p`
@@ -49,15 +47,5 @@ export const DestructuringIframe = styled.div`
         @media (max-width: 768px) {
             width: 90%;
         }
-    }
-`;
-
-export const DestructuringLinks = styled.div`
-    padding-top: 10px;
-
-    & a {
-        color: #fff;
-        text-decoration: none;
-        font-style: italic;                
     }
 `;
