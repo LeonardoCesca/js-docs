@@ -1,3 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export default () => <div>Hello world!</div>
+import { HomeContent } from './styles';
+
+export default function Home() {
+  return (
+    <HomeContent>
+      <h1>Home</h1>
+    </HomeContent>
+  )
+}
