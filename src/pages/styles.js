@@ -20,6 +20,7 @@ export const Title = styled.h1`
     text-decoration: underline;
     text-decoration-color: #FF9900;
     font-weight: bold;
+    margin-bottom: 0;
 
     @media (max-width: 768px) {
         padding-top: 26px;
@@ -27,14 +28,13 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    margin: 0 13px 18px 13px;
+    margin: 26px 13px 18px 13px;
 `
 
 export const Iframe = styled.div`
     width: 45%;
     border: 0; 
     margin: 0 auto;
-    overflow: hidden;
     border-radius: 15px;
 
     @media (max-width: 768px) {

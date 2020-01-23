@@ -15,6 +15,12 @@ export default function Destructuring ({data}) {
       <Iframe>
         <iframe src="https://jsfiddle.net/leonardocesca/btk8Le1q/6/embedded/js/"></iframe>
       </Iframe>
+      <Paragraph>
+        {data.markdownRemark.frontmatter.explanation}
+      </Paragraph>
+      <Iframe>
+        <iframe src="https://jsfiddle.net/leonardocesca/gLzxme57/3/embedded/js/"></iframe>
+      </Iframe>
       <Title>{data.markdownRemark.frontmatter.infos}</Title>
       <Links>
         <Link to='destructuring/destructuring-objects/'>{data.markdownRemark.frontmatter.destructObj[0].title}</Link>
@@ -29,6 +35,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         subtitle
+        explanation
         infos
         date
         destructObj {
