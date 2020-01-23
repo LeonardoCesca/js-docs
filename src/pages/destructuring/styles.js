@@ -27,7 +27,7 @@ export const DestructuringTitle = styled.h1`
 `;
 
 export const DestructuringParagraph = styled.p`
-  /* TO DO */
+    margin: 0 13px 18px 13px;
 `
 
 export const DestructuringIframe = styled.div`
