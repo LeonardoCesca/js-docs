@@ -28,7 +28,16 @@ export const Title = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-    margin: 26px 13px 18px 13px;
+    padding: 26px 13px 18px 13px;
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        margin: 26px 13px 18px 13px;
+        padding: 0;
+    }
 `
 
 export const Iframe = styled.div`
