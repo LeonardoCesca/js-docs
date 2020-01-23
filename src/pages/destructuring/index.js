@@ -1,25 +1,25 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 
-import { DestructuringContent, DestructuringTitle, DestructuringParagraph, DestructuringIframe, DestructuringLinks } from './styles';
+import { Content, Title, Paragraph, Iframe, Links } from '../styles';
 
 export default function Destructuring ({data}) {
   return (
-    <DestructuringContent>
-      <DestructuringTitle>
+    <Content>
+      <Title>
         {data.markdownRemark.frontmatter.title}
-      </DestructuringTitle>
-      <DestructuringParagraph>
+      </Title>
+      <Paragraph>
         {data.markdownRemark.frontmatter.subtitle}
-      </DestructuringParagraph>
-      <DestructuringIframe>
+      </Paragraph>
+      <Iframe>
         <iframe src="https://jsfiddle.net/leonardocesca/btk8Le1q/3/embedded/js/"></iframe>
-      </DestructuringIframe>
-      <DestructuringTitle>{data.markdownRemark.frontmatter.infos}</DestructuringTitle>
-      <DestructuringLinks>
-        <Link to='destructuring/destructuring-objects/'>Destructuring Objects</Link>
-      </DestructuringLinks>
-    </DestructuringContent>
+      </Iframe>
+      <Title>{data.markdownRemark.frontmatter.infos}</Title>
+      <Links>
+        <Link to='destructuring/destructuring-objects/'>{data.markdownRemark.frontmatter.destructObj[0].title}</Link>
+      </Links>
+    </Content>
   )
 }
 
@@ -31,6 +31,9 @@ export const pageQuery = graphql`
         subtitle
         infos
         date
+        destructObj {
+          title
+        }
       }
     }
   }
