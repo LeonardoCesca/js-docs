@@ -2,7 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 
 import { Content, Title, Paragraph, Iframe, Links, ContentInfos } from '../styles';
-
+import { StyledLink } from '../../components/layout/styles';
+ 
 export default function Function ({data}) {
   return (
     <Content>
@@ -13,20 +14,12 @@ export default function Function ({data}) {
         {data.markdownRemark.frontmatter.subtitle}
       </Paragraph>
       <Iframe>
-        <span>frame</span>
-        {/* <iframe src="https://jsfiddle.net/leonardocesca/btk8Le1q/6/embedded/js/"></iframe> */}
-      </Iframe>
-      <Paragraph>
-        {data.markdownRemark.frontmatter.explanation}
-      </Paragraph>
-      <Iframe>
-        <span>frame</span>
-        {/* <iframe src="https://jsfiddle.net/leonardocesca/gLzxme57/3/embedded/js/"></iframe> */}
+        <iframe src="https://jsfiddle.net/Bruno_Ramires/mhja5r9n/3/embedded/js/"></iframe>
       </Iframe>
       <ContentInfos>
         <Title>{data.markdownRemark.frontmatter.infos}</Title>
         <Links>
-          <Link to='function/function-expression/'>{data.markdownRemark.frontmatter.functionExpression[0].title}</Link>
+          <StyledLink to='function/function-expression/'>{data.markdownRemark.frontmatter.functionExpression[0].title}</StyledLink>
         </Links>
       </ContentInfos>
     </Content>
