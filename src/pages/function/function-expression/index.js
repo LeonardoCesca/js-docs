@@ -14,13 +14,11 @@ export default function FunctionExpression ({data}) {
         {data.markdownRemark.frontmatter.functionExpression[1].subtitle}
       </Paragraph>
       <Iframe>
-        <span>frame</span>
-        {/* <iframe src="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/"></iframe> */}
+        <iframe src="http://jsfiddle.net/Bruno_Ramires/5orpLbc6/3/embedded/js/"></iframe>
       </Iframe>
    </Content>
   )
 }
-
 
 export const pageQuery = graphql`
   query FunctionExpressionPageQuery {
