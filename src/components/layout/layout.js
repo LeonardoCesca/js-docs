@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import { navigate } from 'gatsby'
+import React, { useState } from 'react'
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
