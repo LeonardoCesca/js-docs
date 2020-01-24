@@ -1,9 +1,12 @@
 import React from 'react'
 
+import { Content, Title, Paragraph } from './styles';
+
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-  </div>
+  <Content>
+    <Title>NOT FOUND</Title>
+    <Paragraph>Página não existe :(</Paragraph>
+  </Content>
 )
 
 export default NotFoundPage
