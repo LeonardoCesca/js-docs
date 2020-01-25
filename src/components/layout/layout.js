@@ -24,13 +24,7 @@ const Layout = ({ children }) => {
           <SidebarItems to='/'>Home</SidebarItems>
           <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
           <SidebarItems to='/function/'>Function</SidebarItems>
-          <Footer 
-          made="Made with"
-          leo="Leonardo Cesca"
-          leo_github="https://github.com/LeonardoCesca"
-          bruno="Bruno Ramires"
-          bruno_github="https://github.com/brunormferreira"
-          />
+          <Footer made="Made with" />
           <CloseButton></CloseButton>
       </ContainerMenu>
         ):(

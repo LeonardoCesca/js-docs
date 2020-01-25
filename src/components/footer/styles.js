@@ -20,13 +20,13 @@ export const FooterText = styled.p`
     color: #fff;
 
     & a {
-        margin-top: 10px;
-        margin-bottom: 5px;
+        margin-top: 15px;
+        margin-bottom: 10px;
         color: #fff;
         font-weight: bold;
 
         &:last-child {
-            margin-top: 5px;
+            margin-top: 21px;
         }
     }
 `;
