@@ -75,4 +75,8 @@ export const Links = styled.div`
 
 export const ContentInfos = styled.div`
     padding-bottom: 25px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 70px;
+    }
 `;
