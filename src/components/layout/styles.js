@@ -67,6 +67,7 @@ export const ContainerHamburguer = styled.header`
 
     @media (max-width: 768px) {
       width: 54px;
+      position: static;
     }
 `;
 
