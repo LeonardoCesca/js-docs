@@ -37,7 +37,7 @@ export const ContainerMenu = styled.aside`
     @media (max-width: 768px) {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 191px);
+      height: 100vh;
       background-color: #282C35;
       border-right: 2px solid #FF9900;
       padding-top: 50px;

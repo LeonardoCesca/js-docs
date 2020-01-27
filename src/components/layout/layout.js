@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
           <SidebarItems to='/'>Home</SidebarItems>
           <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
           <SidebarItems to='/function/'>Function</SidebarItems>
-          <Footer made="Made with" />
           <CloseButton></CloseButton>
+          <Footer made="Made with" />
       </ContainerMenu>
         ):(
           <ContainerHamburguer>
