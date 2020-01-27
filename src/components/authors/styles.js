@@ -9,6 +9,10 @@ export const AuthorsContent = styled.div`
     margin: 0 auto;
     background-color: #fff;
     margin-top: 100px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const AuthorsBox = styled.div`
@@ -37,11 +41,11 @@ export const AuthorsContentBox = styled.div`
 
 export const AuthorsImage = styled.img` 
     border-radius: 50%;
-    width: 100px;
+    width: 101px;
     height: 100px;
 `;
 
-export const AuthorsGit = styled.footer`
+export const AuthorsGit = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;

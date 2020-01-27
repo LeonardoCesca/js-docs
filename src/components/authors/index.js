@@ -1,22 +1,33 @@
 import React from 'react';
 
+import metadata from '../../../config/metadata';
+
 import { AuthorsContent, AuthorsBox, AuthorsImage, AuthorsText, AuthorsDescription, AuthorsContentBox, AuthorsGit } from './styles';
 
-export default function Authors(props) {
+const authors = metadata.authors.map((author, index) => {
+  console.log(author.name);
   return (
-    <AuthorsContent>
-        <AuthorsBox>
-            <AuthorsImage src="https://avatars0.githubusercontent.com/u/22780548?s=460&v=4"></AuthorsImage>
-            <AuthorsContentBox>
-                <AuthorsText>
-                    Leonardo Cesca Flach
-                </AuthorsText>
-                <AuthorsDescription>
-                    teto
-                </AuthorsDescription>
-            </AuthorsContentBox>
-        </AuthorsBox>
-        <AuthorsGit>github</AuthorsGit>
+    <AuthorsContent key={index}>
+      <AuthorsBox>
+        <AuthorsImage src={author.url_avatar}></AuthorsImage>
+        <AuthorsContentBox>
+            <AuthorsText>
+                {author.name}
+            </AuthorsText>
+            <AuthorsDescription>
+                {author.description}
+            </AuthorsDescription>
+        </AuthorsContentBox>
+      </AuthorsBox>
+      <AuthorsGit href={author.url_git}>github</AuthorsGit>
     </AuthorsContent>
+  )
+})
+
+export default function Authors() {
+  return (
+    <>
+      {authors}
+    </>
   )
 }

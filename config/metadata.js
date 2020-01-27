@@ -8,5 +8,19 @@ module.exports = {
             name: 'Bruno Ramires',
             url: 'https://github.com/brunormferreira',
         }
+    ],
+    authors: [
+        {
+            name: 'Leonardo Cesca',
+            url_git: 'https://github.com/LeonardoCesca',
+            url_avatar: 'https://avatars0.githubusercontent.com/u/22780548?s=460&v=4',
+            description:'blabla'
+        },
+        {
+            name: 'Bruno Ramires',
+            url_git: 'https://github.com/brunormferreira',
+            url_avatar: 'https://avatars0.githubusercontent.com/u/35575092?s=460&v=4',
+            description:'blabla'
+        },
     ]
 }
