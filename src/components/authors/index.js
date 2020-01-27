@@ -5,7 +5,6 @@ import metadata from '../../../config/metadata';
 import { AuthorsContent, AuthorsBox, AuthorsImage, AuthorsText, AuthorsDescription, AuthorsContentBox, AuthorsGit } from './styles';
 
 const authors = metadata.authors.map((author, index) => {
-  console.log(author.name);
   return (
     <AuthorsContent key={index}>
       <AuthorsBox>
