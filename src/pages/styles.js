@@ -8,7 +8,21 @@ export const Content = styled.div`
     font-weight: bold;
     color: #FFFFFF;
     background-color: #282C35;
+    overflow-y: scroll;
 
+    ::-webkit-scrollbar {
+      padding: 10px 0;
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgb(40, 44, 53);
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 153, 0);
+      border-radius: 20px;
+    }
+    
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;

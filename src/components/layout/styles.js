@@ -84,20 +84,7 @@ export const Container = styled.div`
 export const ContainerContent = styled.div`
     display: flex;
     height: 100vh;
-    overflow-y: scroll;
-
-    ::-webkit-scrollbar {
-      padding: 10px 0;
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: rgb(40, 44, 53);
-      border-radius: 20px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: rgb(255, 153, 0);
-      border-radius: 20px;
-    }
+    overflow: hidden;
 `;
 
 export const StyledLink = styled(props => <Link {...props} />)`
