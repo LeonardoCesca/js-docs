@@ -8,11 +8,6 @@ export const ContributorsBox = styled.div`
     margin: 0 auto;
     margin-bottom: 40px;
 
-    & p {
-        padding-top: 30px;
-        font-size: 24px;
-    }
-
     @media (max-width: 768px) {
         width: 90%;
         height: 80%;
@@ -20,7 +15,7 @@ export const ContributorsBox = styled.div`
     }
 `;
 
-export const ContributorsContainer = styled.div`
+export const ContributorsContainer = styled.section`
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -47,7 +42,12 @@ export const ContributorsContainer = styled.div`
     & a {
         text-decoration: none;
         color:#000;
-        margin: 35px;
+        display: flex;
+        justify-content: center;
+
+        & svg {
+            padding: 9px;
+        }
     }
 
     & img {
@@ -57,9 +57,22 @@ export const ContributorsContainer = styled.div`
     }
 `;
 
+export const ContributorsTitle = styled.p`
+    padding-top: 30px;
+    font-size: 24px;
+`;
+
 export const Author = styled.span`
     display: block;
     color: #efe0e0;
-    padding-top: 10px;
+    padding-top: 7px;
+`;
 
+export const Box = styled.span`
+    margin: 35px;
+`;
+
+export const Links = styled.div`
+    display: flex;
+    justify-content: center;
 `;

@@ -2,21 +2,31 @@ import React from 'react';
 
 import metadata from '../../../config/metadata';
 
-import { ContributorsBox, ContributorsContainer, Author } from './styles';
+import { ContributorsBox, ContributorsContainer, ContributorsTitle, Author, Box, Links } from './styles';
 
-const contributors = metadata.contributors.map(({name, url_git, url_avatar}, index) => {
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
+const contributors = metadata.contributors.map(({name, url_git, url_linkedin, url_avatar}, index) => {
   return (
-      <a key={index} href={url_git}>
-       <img src={url_avatar} alt="Smiley face" />
-       <Author>{name}</Author>
-      </a>
+    <Box key={index}>
+        <img src={url_avatar} alt="Smiley face" />
+        <Links>
+          <a href={url_git}>
+            <FaGithub />
+          </a>
+          <a href={url_linkedin}>
+            <FaLinkedin />
+          </a>
+        </Links>
+      <Author>{name}</Author>
+    </Box>
   )
 })
 
 export default function Contribuitors() {
   return (
       <ContributorsBox>
-        <p>Contribuidores</p>
+        <ContributorsTitle>Contribuidores</ContributorsTitle>
         <ContributorsContainer>
           {contributors}
         </ContributorsContainer>
