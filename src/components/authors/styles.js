@@ -12,22 +12,11 @@ export const AuthorsContent = styled.div`
 
     @media (max-width: 768px) {
         width: 90%;
+        height: auto;
         background-color: transparent;
         align-items: center;
-        max-height:736px;
         margin-top: 35px;
     }
-
-    //IPHONE 6/7/8
-    @media (max-height: 667px) {
-        max-height:667px;
-    }
-
-    //IPHONE %
-    @media (max-height: 568px) {
-        max-height:568px;
-    }
-
 `;
 
 export const AuthorsBox = styled.div`
@@ -41,7 +30,16 @@ export const AuthorsBox = styled.div`
         flex-direction: column;
         align-items: center;
         background: #fff;
-        height: auto;
+    }
+
+    //IPHONE 6/7/8
+    @media (max-height: 667px) {
+        max-height: 100vh;
+    }
+
+    //IPHONE %
+    @media (max-height: 568px) {
+        max-height: 568px;
     }
 `;
 
