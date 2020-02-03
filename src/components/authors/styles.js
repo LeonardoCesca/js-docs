@@ -15,7 +15,7 @@ export const AuthorsContent = styled.div`
         background-color: transparent;
         align-items: center;
         margin-top: 35px;
-        height: max-content;
+        margin-bottom: 105px;
     }
 `;
 
@@ -30,6 +30,7 @@ export const AuthorsBox = styled.div`
         flex-direction: column;
         align-items: center;
         background: #fff;
+        height: 200px;
     }
 `;
 
@@ -47,6 +48,10 @@ export const AuthorsContentBox = styled.div`
     display: flex;
     flex-direction: column;
     height: 110px;
+
+    @media (max-width: 768px) {
+        height: 115px;
+    }
 `;
 
 export const AuthorsImage = styled.img` 
@@ -67,5 +72,6 @@ export const AuthorsGit = styled.a`
         width: 90%;
         background-color: #fff;
         margin-bottom: 45px;
+        height: 20px;
     }
 `;
