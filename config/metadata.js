@@ -22,5 +22,9 @@ module.exports = {
             url_avatar: 'https://avatars0.githubusercontent.com/u/35575092?s=460&v=4',
             description:'blabla'
         },
+        {
+            name: 'Novo Contribuidor',
+            url_avatar: 'https://sisteminternet.com.br/avatar-icon.png'
+        }
     ]
 }
