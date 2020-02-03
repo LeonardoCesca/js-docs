@@ -11,6 +11,7 @@ export const AuthorsContent = styled.div`
     margin-top: 100px;
 
     @media (max-width: 768px) {
+        flex-basis: auto;
         width: 90%;
         height: auto;
         background-color: transparent;
@@ -30,7 +31,7 @@ export const AuthorsBox = styled.div`
         flex-direction: column;
         align-items: center;
         background: #fff;
-        min-height: 205px;
+        flex: 0 0 auto;
     }
 `;
 
