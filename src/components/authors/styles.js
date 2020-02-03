@@ -14,9 +14,21 @@ export const AuthorsContent = styled.div`
         width: 90%;
         background-color: transparent;
         align-items: center;
-        height: auto;
+        max-height:736px;
         margin-top: 35px;
     }
+
+    //IPHONE 6/7/8
+    @media (max-height: 667px) {
+    .full-height{
+        max-height:667px;
+    }
+
+    //IPHONE %
+    @media (max-height: 568px) {
+        max-height:568px;
+    }
+
 `;
 
 export const AuthorsBox = styled.div`
@@ -52,7 +64,7 @@ export const AuthorsContentBox = styled.div`
 
 export const AuthorsImage = styled.img` 
     border-radius: 50%;
-    width: 90px;
+    width: 90px; 
     height: 84px;
 `;
 
