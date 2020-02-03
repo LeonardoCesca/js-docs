@@ -30,16 +30,7 @@ export const AuthorsBox = styled.div`
         flex-direction: column;
         align-items: center;
         background: #fff;
-    }
-
-    //IPHONE 6/7/8
-    @media (max-height: 667px) {
-        max-height: 100vh;
-    }
-
-    //IPHONE %
-    @media (max-height: 568px) {
-        max-height: 568px;
+        height: 205px;
     }
 `;
 
