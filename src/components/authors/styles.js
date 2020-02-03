@@ -30,7 +30,7 @@ export const AuthorsBox = styled.div`
         flex-direction: column;
         align-items: center;
         background: #fff;
-        height: 205px;
+        min-height: 205px;
     }
 `;
 
