@@ -8,6 +8,7 @@ export const Content = styled.div`
     font-weight: bold;
     color: #FFFFFF;
     background-color: #282C35;
+    overflow-y: auto;
 
     @media (max-width: 768px) {
         display: flex;
