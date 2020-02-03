@@ -20,7 +20,6 @@ export const AuthorsContent = styled.div`
 
     //IPHONE 6/7/8
     @media (max-height: 667px) {
-    .full-height{
         max-height:667px;
     }
 
