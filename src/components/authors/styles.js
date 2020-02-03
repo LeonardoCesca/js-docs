@@ -52,8 +52,8 @@ export const AuthorsContentBox = styled.div`
 
 export const AuthorsImage = styled.img` 
     border-radius: 50%;
-    width: 101px;
-    height: 100px;
+    width: 90px;
+    height: 84px;
 `;
 
 export const AuthorsGit = styled.a`
