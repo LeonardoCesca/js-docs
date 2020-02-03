@@ -15,8 +15,7 @@ export const AuthorsContent = styled.div`
         background-color: transparent;
         align-items: center;
         margin-top: 35px;
-        flex-grow: 1;
-        height: 0px;
+        height: max-content;
     }
 `;
 
