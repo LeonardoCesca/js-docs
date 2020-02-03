@@ -49,6 +49,10 @@ export const AuthorsContentBox = styled.div`
     display: flex;
     flex-direction: column;
     height: 110px;
+
+    @media (max-width: 768px) {
+        min-height: 50vh;
+    }
 `;
 
 export const AuthorsImage = styled.img` 
