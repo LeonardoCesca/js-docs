@@ -54,28 +54,6 @@ export const Paragraph = styled.p`
     }
 `
 
-export const Iframe = styled.div`
-    width: 45%;
-    border: 0; 
-    margin: 0 auto;
-    border-radius: 15px;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-    
-    & iframe {
-        width: 100%;
-        height: 285px;
-        border: none;
-
-        @media (max-width: 768px) {
-            width: 90%;
-            height: 100%;
-        }
-    }
-`;
-
 export const Links = styled.div`
     padding: 10px 0 10px 0;
 

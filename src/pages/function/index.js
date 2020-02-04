@@ -1,8 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Content, Title, Paragraph, Iframe, Links, ContentInfos } from '../styles';
+import { Content, Title, Paragraph, Links, ContentInfos } from '../styles';
 import { StyledLink } from '../../components/layout/styles';
+
+import Iframes from '../../components/iframes/';
  
 export default function Function ({data}) {
   return (
@@ -13,9 +15,7 @@ export default function Function ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.subtitle}
       </Paragraph>
-      <Iframe>
-        <iframe title="function" src="https://jsfiddle.net/Bruno_Ramires/mhja5r9n/3/embedded/js/"></iframe>
-      </Iframe>
+        <Iframes url="https://jsfiddle.net/Bruno_Ramires/mhja5r9n/3/embedded/js/" /> 
       <ContentInfos>
         <Title>{data.markdownRemark.frontmatter.infos}</Title>
         <Links>

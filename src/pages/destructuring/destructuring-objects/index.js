@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 
-import { ClipLoader } from "react-spinners";
+import { Content, Title, Paragraph } from '../../styles';
 
-import { Content, Title, Paragraph, Iframe } from '../../styles';
+import Iframes from '../../../components/iframes/';
 
 export default function DestructuringObjects ({data}) {
-
-  const [isLoader, setIsLoader] = useState(true);
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setIsLoader(false);
-    }, 1000);
-    return () => {
-      window.clearInterval(timer);
-    };
-  }, []);
 
   return (
     <Content>
@@ -26,22 +15,7 @@ export default function DestructuringObjects ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.destructObj[1].subtitle}
       </Paragraph>
-      {isLoader ? (
-        <ClipLoader
-          size={45}
-          color={"#123abc"}
-          loading={isLoader}
-        />
-        ) : (
-        <Iframe>
-          <iframe 
-            title="destructuring objects" 
-            src="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/"
-            onLoad={!isLoader}
-            >
-          </iframe>
-        </Iframe>
-        )}
+      <Iframes url="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/" />
    </Content>
   )
 }
