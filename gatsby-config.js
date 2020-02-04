@@ -8,6 +8,7 @@ module.exports = {
   plugins: 
   [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
     resolve: `gatsby-source-filesystem`,
         options: {
@@ -15,7 +16,6 @@ module.exports = {
           path: `${__dirname}/src/markdown/`
         }
     },
-    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

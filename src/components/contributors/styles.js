@@ -46,6 +46,7 @@ export const ContributorsContainer = styled.section`
 
         & svg {
             padding: 9px;
+            color: #fff;
         }
     }
 

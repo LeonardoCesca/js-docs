@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
+import { Helmet } from 'react-helmet';
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
@@ -17,6 +19,10 @@ const Layout = ({ children }) => {
 
   return (
     <Container>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>JavaScript Doc's</title>
+      </Helmet>
       <GlobalStyle />
         {isVisible ? (
       <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
