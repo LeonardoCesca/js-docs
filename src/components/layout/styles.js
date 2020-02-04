@@ -1,6 +1,13 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
+import { fadeIn } from 'react-animations';
+
+const fadeInAnimation = keyframes`${fadeIn}`;
+
+export const FadeIn = styled.div`
+  animation: 1.1s ${fadeInAnimation};
+`;
 
 export const ContainerMenu = styled.aside`
     width: 20%;

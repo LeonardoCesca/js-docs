@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 
 import { GlobalStyle } from '../../theme/globalStyle';
 
-import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton, ContainerHamburguer } from './styles';
+import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton, ContainerHamburguer, FadeIn } from './styles';
 
 import Footer from '../footer/index';
 
@@ -26,16 +26,20 @@ const Layout = ({ children }) => {
       <GlobalStyle />
         {isVisible ? (
       <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
+        <FadeIn>
           <Title>JavaScript - Introdução</Title>
           <SidebarItems to='/'>Home</SidebarItems>
           <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
           <SidebarItems to='/function/'>Function</SidebarItems>
           <CloseButton></CloseButton>
           <Footer made="Made with" />
+        </FadeIn>
       </ContainerMenu>
         ):(
           <ContainerHamburguer>
-            <Hamburger onClick={() => setIsVisible(!isVisible)} />
+            <FadeIn>
+              <Hamburger onClick={() => setIsVisible(!isVisible)} />
+            </FadeIn>
           </ContainerHamburguer>
         )} 
       <ContainerContent>

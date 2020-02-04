@@ -26,6 +26,7 @@
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-remark": "^2.6.48",
     "react": "^16.12.0",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.9.0",
