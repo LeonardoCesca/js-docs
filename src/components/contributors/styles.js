@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export const ContributorsBox = styled.div`
@@ -11,7 +10,7 @@ export const ContributorsBox = styled.div`
     @media (max-width: 768px) {
         width: 90%;
         height: 80%;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
     }
 `;
 

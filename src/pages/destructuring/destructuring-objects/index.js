@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Content, Title, Paragraph, Iframe, Links } from '../../styles';
+import { Content, Title, Paragraph, Iframe } from '../../styles';
 
 export default function DestructuringObjects ({data}) {
   return (
@@ -13,7 +13,7 @@ export default function DestructuringObjects ({data}) {
         {data.markdownRemark.frontmatter.destructObj[1].subtitle}
       </Paragraph>
       <Iframe>
-        <iframe src="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/"></iframe>
+        <iframe title="destructuring objects" src="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/"></iframe>
       </Iframe>
    </Content>
   )
