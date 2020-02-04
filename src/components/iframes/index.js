@@ -4,7 +4,7 @@ import { ClipLoader } from "react-spinners";
 
 import { IframesStyle } from './styles';
 
-export default function Iframes({url}) {
+export default function Iframes({url, description}) {
 
 const [isLoader, setIsLoader] = useState(true);
 
@@ -26,7 +26,7 @@ const [isLoader, setIsLoader] = useState(true);
           loading={isLoader}
         />
         ) : (
-          <IframesStyle title="" src={url}></IframesStyle>
+          <IframesStyle title={description} src={url}></IframesStyle>
       )}
     </>
   )

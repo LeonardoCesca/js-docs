@@ -15,7 +15,7 @@ export default function Function ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.subtitle}
       </Paragraph>
-        <Iframes url="https://jsfiddle.net/Bruno_Ramires/mhja5r9n/3/embedded/js/" /> 
+        <Iframes description="iframe function" url="https://jsfiddle.net/Bruno_Ramires/mhja5r9n/3/embedded/js/" /> 
       <ContentInfos>
         <Title>{data.markdownRemark.frontmatter.infos}</Title>
         <Links>

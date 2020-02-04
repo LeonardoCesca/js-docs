@@ -15,11 +15,11 @@ export default function Destructuring ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.subtitle}
       </Paragraph>
-        <Iframes url="https://jsfiddle.net/leonardocesca/btk8Le1q/6/embedded/js/" />
+        <Iframes description="iframe destructuring 1" url="https://jsfiddle.net/leonardocesca/btk8Le1q/6/embedded/js/" />
       <Paragraph>
         {data.markdownRemark.frontmatter.explanation}
       </Paragraph>
-        <Iframes url="https://jsfiddle.net/leonardocesca/gLzxme57/3/embedded/js/" />
+        <Iframes description="iframe destructuring 2" url="https://jsfiddle.net/leonardocesca/gLzxme57/3/embedded/js/" />
       <ContentInfos>
         <Title>{data.markdownRemark.frontmatter.infos}</Title>
         <Links>

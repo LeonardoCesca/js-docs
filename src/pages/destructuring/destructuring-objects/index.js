@@ -15,7 +15,7 @@ export default function DestructuringObjects ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.destructObj[1].subtitle}
       </Paragraph>
-      <Iframes url="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/" />
+      <Iframes description="iframe destructuring objects" url="https://jsfiddle.net/leonardocesca/g76nu4qt/23/embedded/js/" />
    </Content>
   )
 }

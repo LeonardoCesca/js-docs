@@ -14,7 +14,7 @@ export default function FunctionExpression ({data}) {
       <Paragraph>
         {data.markdownRemark.frontmatter.functionExpression[1].subtitle}
       </Paragraph>
-        <Iframes url="https://jsfiddle.net/Bruno_Ramires/5orpLbc6/3/embedded/js/" />
+        <Iframes description="iframe function expression" url="https://jsfiddle.net/Bruno_Ramires/5orpLbc6/3/embedded/js/" />
    </Content>
   )
 }
