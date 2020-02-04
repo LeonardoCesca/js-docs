@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>JavaScript Doc's</title>
+        <link rel="shortcut icon" href="../../../static/favicon.ico" />
       </Helmet>
       <GlobalStyle />
         {isVisible ? (
