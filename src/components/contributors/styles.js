@@ -92,6 +92,10 @@ export const Box = styled.span`
   @media (min-width: 1350px) {
     height: 37%;
   }
+
+  @media (min-width: 1366px) and (max-height: 768px) {
+    height: 42%;
+  }
 `
 
 export const Links = styled.div`
