@@ -33,6 +33,12 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>JavaScript Doc's</title>
+        <meta name="description" content="Projeto open-source que tem por objetivo contribuir com a comunidade Javascript." />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://javascript-docs.netlify.com/" />
+        <meta property="og:title" content="Javascript Doc's" />
+        <meta property="og:description" content="Feito em Gatsby com GraphQL." />
       </Helmet>
       <GlobalStyle />
       {isVisible ? (
