@@ -47,15 +47,15 @@ export const Paragraph = styled.p`
   margin: 0 auto;
   font-weight: 300;
 
+  & a {
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+  }
+
   @media (max-width: 768px) {
     max-width: 100%;
     margin: 26px 13px 18px 13px;
     padding: 0;
-  }
-
-  & a {
-    text-decoration: none;
-    color: rgb(255, 153, 0);
   }
 `
 
