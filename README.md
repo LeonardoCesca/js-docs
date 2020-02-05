@@ -81,7 +81,7 @@ This project was made to contribute to the Open Source World and for adquire mor
 
 - **Leonardo Cesca** - [GitHub](https://github.com/LeonardoCesca)
 
-  <a href="https://github.com/brunormferreira">
+  <a href="https://github.com/LeonardoCesca">
     <img 
     alt="Imagem do Autor Leonardo Cesca" src="https://avatars0.githubusercontent.com/u/22780548?s=460&v=4" width="100">
   </a>
