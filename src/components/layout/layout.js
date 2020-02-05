@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
         <meta property="og:description" content="Feito em Gatsby com GraphQL." />
       </Helmet>
       <GlobalStyle />
-      {!isVisible ? (
+      {isVisible ? (
         <>
         <ContainerMenu>
           <FadeIn onClick={() => setIsVisible(!isVisible)}>
