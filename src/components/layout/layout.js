@@ -1,4 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+
+import { navigate } from "gatsby"
 
 import { Helmet } from "react-helmet"
 
@@ -27,6 +29,11 @@ const SidebarItems = props => (
 )
 
 const Layout = ({ children }) => {
+
+  useEffect(() => {
+    navigate("/")
+  }, [])
+
   const [isVisible, setIsVisible] = useState(false)
 
   return (
