@@ -1,12 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState } from "react"
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet"
 
-import { GlobalStyle } from '../../theme/globalStyle';
+import { GlobalStyle } from "../../theme/globalStyle"
 
-import { Container, Hamburger, ContainerMenu, ContainerLink, Title, ContainerContent, StyledLink, CloseButton, ContainerHamburguer, FadeIn } from './styles';
+import {
+  Container,
+  Hamburger,
+  ContainerMenu,
+  ContainerLink,
+  Title,
+  ContainerContent,
+  StyledLink,
+  CloseButton,
+  ContainerHamburguer,
+  FadeIn,
+} from "./styles"
 
-import Footer from '../footer/index';
+import Footer from "../footer/index"
 
 const SidebarItems = props => (
   <ContainerLink>
@@ -24,29 +35,27 @@ const Layout = ({ children }) => {
         <title>JavaScript Doc's</title>
       </Helmet>
       <GlobalStyle />
-        {isVisible ? (
-      <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
-        <FadeIn>
-          <Title>JavaScript - Introdução</Title>
-          <SidebarItems to='/'>Home</SidebarItems>
-          <SidebarItems to='/destructuring/'>Destructuring</SidebarItems>
-          <SidebarItems to='/function/'>Function</SidebarItems>
-          <CloseButton></CloseButton>
-          <Footer made="Made with" />
-        </FadeIn>
-      </ContainerMenu>
-        ):(
-          <ContainerHamburguer>
-            <FadeIn>
-              <Hamburger onClick={() => setIsVisible(!isVisible)} />
-            </FadeIn>
-          </ContainerHamburguer>
-        )} 
-      <ContainerContent>
-        {children}
-      </ContainerContent>
+      {isVisible ? (
+        <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
+          <FadeIn>
+            <Title>JavaScript Doc's</Title>
+            <SidebarItems to="/">Home</SidebarItems>
+            <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
+            <SidebarItems to="/function/">Function</SidebarItems>
+            <CloseButton></CloseButton>
+            <Footer made="Made with" />
+          </FadeIn>
+        </ContainerMenu>
+      ) : (
+        <ContainerHamburguer>
+          <FadeIn>
+            <Hamburger onClick={() => setIsVisible(!isVisible)} />
+          </FadeIn>
+        </ContainerHamburguer>
+      )}
+      <ContainerContent>{children}</ContainerContent>
     </Container>
   )
 }
 
-export default Layout;
+export default Layout
