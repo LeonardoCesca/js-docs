@@ -15,6 +15,7 @@ import {
   CloseButton,
   ContainerHamburguer,
   FadeIn,
+  ToggleButton,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -41,17 +42,20 @@ const Layout = ({ children }) => {
         <meta property="og:description" content="Feito em Gatsby com GraphQL." />
       </Helmet>
       <GlobalStyle />
-      {isVisible ? (
-        <ContainerMenu onClick={() => setIsVisible(!isVisible)}>
-          <FadeIn>
+      {!isVisible ? (
+        <>
+        <ContainerMenu>
+          <FadeIn onClick={() => setIsVisible(!isVisible)}>
             <Title>JavaScript Doc's</Title>
             <SidebarItems to="/">Home</SidebarItems>
             <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
             <SidebarItems to="/function/">Function</SidebarItems>
-            <CloseButton></CloseButton>
-            <Footer made="Made with" />
+            <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
           </FadeIn>
+            <Footer made="Made with" />
         </ContainerMenu>
+        <ToggleButton onClick={() => setIsVisible(!isVisible)} />
+        </>
       ) : (
         <ContainerHamburguer>
           <FadeIn>

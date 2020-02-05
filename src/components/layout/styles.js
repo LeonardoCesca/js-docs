@@ -155,3 +155,30 @@ export const CloseButton = styled.span`
     }
 
 `;
+
+export const ToggleButton = styled.div`
+position: absolute;
+    width: 24px;
+    height: 31px;
+    background-color: #000;
+    left: 16.9%;
+    margin-top: 10px;
+    cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 7px;
+    width: 6px;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid blue;
+  }
+`;
