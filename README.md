@@ -16,14 +16,20 @@ This project was made to contribute to the Open Source World and for adquire mor
 
 ## 🚀 Fork and Contribute
 
-1.  **Cloning repository**
+1.  **Forking repository**
 
-    Clone the repository to start make changes!
+    Fork the repository and configure set-up UPSTREAM.
 
     ```shell
-    $ git clone https://github.com/LeonardoCesca/js-docs
+    $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
     ```
-
+    
+    Check the repository
+    
+    ```shell
+    $ git remote -v
+    ```
+    
 1.  **Create a branch**
 
     Navigate into the new site’s directory and start it up.
