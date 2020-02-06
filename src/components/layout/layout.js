@@ -28,7 +28,6 @@ const SidebarItems = props => (
 )
 
 const Layout = ({ children }) => {
-
   const [isVisible, setIsVisible] = useState(false)
 
   return (
@@ -36,29 +35,43 @@ const Layout = ({ children }) => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>JavaScript Doc's</title>
-        <meta name="description" content="Projeto open-source que tem por objetivo contribuir com a comunidade Javascript." />
+        <meta
+          name="description"
+          content="Projeto open-source que tem por objetivo contribuir com a comunidade Javascript."
+        />
         <meta property="og:locale" content="pt_BR" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://javascript-docs.netlify.com/" />
+        <meta
+          property="og:url"
+          content="https://javascript-docs.netlify.com/"
+        />
         <meta property="og:title" content="Javascript Doc's" />
-        <meta property="og:description" content="Feito em Gatsby com GraphQL." />
+        <meta
+          property="og:description"
+          content="Feito em Gatsby com GraphQL."
+        />
       </Helmet>
       <GlobalStyle />
       {isVisible ? (
         <>
-        <ContainerMenu>
-          <Title>JavaScript Doc's</Title>
-          <FadeIn>
-            <ContentMenu onClick={() => setIsVisible(!isVisible)}>
-              <SidebarItems to="/">Home</SidebarItems>
-              <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-              <SidebarItems to="/function/">Function</SidebarItems>
-              <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
-            </ContentMenu>
-          </FadeIn>
+          <ContainerMenu>
+            <Title>JavaScript Doc's</Title>
+            <FadeIn>
+              <ContentMenu onClick={() => setIsVisible(!isVisible)}>
+                <SidebarItems to="/">Home</SidebarItems>
+                <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
+                <SidebarItems to="/function/">Function</SidebarItems>
+                <SidebarItems to="/ternary-operator/">
+                  Ternary Operator
+                </SidebarItems>
+                <CloseButton
+                  onClick={() => setIsVisible(!isVisible)}
+                ></CloseButton>
+              </ContentMenu>
+            </FadeIn>
             <Footer made="Made with" />
-        </ContainerMenu>
-        <ToggleButton onClick={() => setIsVisible(!isVisible)} />
+          </ContainerMenu>
+          <ToggleButton onClick={() => setIsVisible(!isVisible)} />
         </>
       ) : (
         <ContainerHamburguer>
