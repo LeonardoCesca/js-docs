@@ -52,6 +52,16 @@ This project was made to contribute to the Open Source World and for adquire mor
     yarn start or npm start
     ```
 
+1. **Create a new page**
+
+    To create more one page about javascript concepts, read about rules:
+
+    * Add a new folder into pages directory
+    * Create a archive `index.js` and `styles.js` on the new folder created
+    * Create a markdown into markdown directory
+    
+    _Note: Remember see if not exist a style that you want use. The principal styles are into `src/styles.js`_ 
+
 1.  **Make a PR (Pull Request)**
 
     ```shell
