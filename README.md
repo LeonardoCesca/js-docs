@@ -18,13 +18,13 @@ This project was made to contribute to the Open Source World and for adquire mor
 
 1.  **Forking repository**
 
-    Fork the repository and configure set-up UPSTREAM.
+    Fork the repository and configure set-up UPSTREAM:
 
     ```shell
     $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
     ```
     
-    Check the repository
+    Check the repository:
     
     ```shell
     $ git remote -v
