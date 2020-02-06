@@ -10,11 +10,11 @@ export default function Home() {
       <Title>Seja bem vindo ao JavaScript Doc's</Title>
       <Paragraph>
         Este projeto foi desenvolvido com a tecnologia
-        <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer">
+        <a href="https://www.gatsbyjs.org/" rel="noopener noreferrer" target="_blank">
           {` Gatsby `}
         </a>
         e com a cooperação do
-        <a href="https://jsfiddle.net/" target="_blank" rel="noopener">
+        <a href="https://jsfiddle.net/" rel="noopener noreferrer" target="_blank">
           {` JSFiddle`}
         </a>
         . Com a intenção de contribuir com o Open Source, cooperando e ajudando

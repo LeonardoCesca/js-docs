@@ -27,6 +27,19 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    ::-webkit-scrollbar {
+      padding: 10px 0;
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 20px;
+    }
   }
 `
 
