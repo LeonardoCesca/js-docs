@@ -11,11 +11,11 @@ export default function Home() {
       <Paragraph>
         Este projeto foi desenvolvido com a tecnologia
         <a href="https://www.gatsbyjs.org/" target="_blank" rel="noreferrer">
-          Gatsby
+          {` Gatsby `}
         </a>
         e com a cooperação do
         <a href="https://jsfiddle.net/" target="_blank" rel="noopener">
-          JSFiddle
+          {` JSFiddle`}
         </a>
         . Com a intenção de contribuir com o Open Source, cooperando e ajudando
         a aumentar cada vez mais nossa querida comunidade!
