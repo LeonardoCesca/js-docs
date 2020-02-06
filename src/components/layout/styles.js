@@ -53,6 +53,11 @@ export const ContainerMenu = styled.aside`
     }
 `;
 
+export const ContentMenu = styled.div`
+  width: 0;
+  margin: 0 auto;
+`;
+
 export const Hamburger = styled.div`
     background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
     background-size: 32px 57px;
@@ -96,7 +101,7 @@ export const ContainerContent = styled.div`
 
 export const StyledLink = styled(props => <Link {...props} />)`
   color: #FFFFFF;
-  text-decoration: none;
+  text-decoration: none;  
 
   &:active {
     color: gray;

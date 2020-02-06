@@ -11,6 +11,7 @@ import {
   ContainerLink,
   Title,
   ContainerContent,
+  ContentMenu,
   StyledLink,
   CloseButton,
   ContainerHamburguer,
@@ -46,12 +47,14 @@ const Layout = ({ children }) => {
       {isVisible ? (
         <>
         <ContainerMenu>
-          <FadeIn onClick={() => setIsVisible(!isVisible)}>
-            <Title>JavaScript Doc's</Title>
-            <SidebarItems to="/">Home</SidebarItems>
-            <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-            <SidebarItems to="/function/">Function</SidebarItems>
-            <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
+          <Title>JavaScript Doc's</Title>
+          <FadeIn>
+            <ContentMenu onClick={() => setIsVisible(!isVisible)}>
+              <SidebarItems to="/">Home</SidebarItems>
+              <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
+              <SidebarItems to="/function/">Function</SidebarItems>
+              <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
+            </ContentMenu>
           </FadeIn>
             <Footer made="Made with" />
         </ContainerMenu>
