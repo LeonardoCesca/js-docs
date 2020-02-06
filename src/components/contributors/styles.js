@@ -88,14 +88,8 @@ export const Box = styled.span`
   border: 2px solid rgb(255, 153, 0);
   padding: 20px;
   border-radius: 4px;
-
-  @media (min-width: 1350px) {
-    height: 37%;
-  }
-
-  @media (min-width: 1366px) and (max-height: 768px) {
-    height: 42%;
-  }
+  height: auto;
+  margin-bottom: auto;
 `
 
 export const Links = styled.div`
