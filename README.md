@@ -73,6 +73,8 @@ This project was made to contribute to the Open Source World and for adquire mor
 1.  **Make a PR (Pull Request)**
 
     ```shell
+    Don't forget to align the code with the master:
+    $ git pull upstream master
     Submit the Pull Request to the repository on Github! And Be happy!
     ```
 
@@ -100,4 +102,13 @@ This project was made to contribute to the Open Source World and for adquire mor
   <a href="https://github.com/LeonardoCesca">
     <img 
     alt="Imagem do Autor Leonardo Cesca" src="https://avatars0.githubusercontent.com/u/22780548?s=460&v=4" width="100">
+  </a>
+  
+ <br />
+  
+- **Laks Castro** - [GitHub](https://github.com/LaksCastro)
+
+  <a href="https://github.com/LaksCastro">
+    <img 
+    alt="Imagem do Autor Laks Castro" src="https://avatars2.githubusercontent.com/u/51419598?s=400&v=4" width="100">
   </a>
