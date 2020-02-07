@@ -85,6 +85,7 @@ export const ContainerHamburguer = styled.header`
 
 export const ContainerLink = styled.div`
     display: flex;
+    text-align: center;
 `;
 
 export const Container = styled.div`
