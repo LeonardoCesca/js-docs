@@ -23,8 +23,10 @@ module.exports = {
             url_linkedin: 'https://www.linkedin.com/in/bruno-ramires-80395517b/',
         },
         {
-            name: 'Novo Contribuidor',
-            url_avatar: 'https://sisteminternet.com.br/avatar-icon.png'
-        }
+            name: 'Laks Castro',
+            url_git: 'https://github.com/LaksCastro',
+            url_avatar: 'https://avatars3.githubusercontent.com/u/51419598?s=460&v=4',
+            url_linkedin: 'https://www.linkedin.com/in/laks-castro-9ab09a18b',
+        },
     ]
 }
