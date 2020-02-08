@@ -12,7 +12,7 @@ export default function CombinedIfElse({ data }) {
       <Title>{ifElseWithElseIf[0].title}</Title>
       <Paragraph>{ifElseWithElseIf[1].subtitle}</Paragraph>
       <Iframes
-        description="iframe destructuring objects"
+        description="iframe using combined operators"
         url="https://jsfiddle.net/LaksCastro/7h2abu5t/18/embedded/js/"
       />
     </Content>

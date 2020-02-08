@@ -29,7 +29,7 @@ export default function ElseIf({ data }) {
         Nada disso, podemos usar o Else, como mostra o exemplo abaixo:
       </Paragraph>
       <Iframes
-        description="iframe destructuring 2"
+        description="iframe using If operator 2"
         url="https://jsfiddle.net/LaksCastro/94ocLtm7/7/embedded/js/"
       />
       <ContentInfos>
