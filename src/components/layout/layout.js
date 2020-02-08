@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { Helmet } from "react-helmet"
 
@@ -31,6 +31,11 @@ const SidebarItems = props => (
 
 const Layout = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [isSetupComplete, setIsSetupComplete] = useState(false)
+
+  useEffect(() => {
+    setIsSetupComplete(true);
+  },[isSetupComplete])
 
   return (
     <Container>
@@ -85,7 +90,9 @@ const Layout = ({ children }) => {
         </ContainerHamburguer>
       )}
       <ContainerContent>{children}</ContainerContent>
-      <Corner />
+      {isSetupComplete ? (
+        <Corner />
+      ) : null }
     </Container>
   )
 }
