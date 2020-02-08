@@ -103,6 +103,7 @@ export const ContainerContent = styled.div`
 export const StyledLink = styled(props => <Link {...props} />)`
   color: #FFFFFF;
   text-decoration: none;  
+  white-space: nowrap;
 
   &:active {
     color: gray;
