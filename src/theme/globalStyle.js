@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: calc(100vh - 15px);
     font-family: 'Open Sans', 'Helvetica Neue', Ubuntu;
+    background: rgb(40, 44, 53);
   }
 
   div {
