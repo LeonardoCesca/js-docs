@@ -90,6 +90,10 @@ export const Box = styled.span`
   border-radius: 4px;
   height: auto;
   margin-bottom: auto;
+
+  & img {
+    object-fit: cover;
+  }
 `
 
 export const Links = styled.div`
