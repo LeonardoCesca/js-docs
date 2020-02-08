@@ -5,6 +5,19 @@ export const CornerContainer = styled.div`
     top: 0;
     right: 10px;
     border: 0;
+    background: transparent;
+  
+    @media(max-width: 768px) {
+        display: none;
+        
+        & a {
+            display: none; 
+            
+            & svg {
+                display: none;
+            }
+        }
+    }
 
     & small {
         position: absolute;
@@ -14,11 +27,4 @@ export const CornerContainer = styled.div`
         transform: rotate(44deg);
     }
 
-    @media(max-width: 768px) {
-        display: none;
-
-        & svg {
-            display: none;
-        }
-    }
 `
