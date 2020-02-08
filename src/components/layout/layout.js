@@ -65,6 +65,7 @@ const Layout = ({ children }) => {
                   Ternary Operator
                 </SidebarItems>
                 <SidebarItems to="/if-else/">If Else</SidebarItems>
+                <SidebarItems to="/for/">Loop For</SidebarItems>
                 <CloseButton
                   onClick={() => setIsVisible(!isVisible)}
                 ></CloseButton>
