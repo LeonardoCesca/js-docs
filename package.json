@@ -19,6 +19,7 @@
     "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-page-creator": "^2.1.38",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-styled-components": "^3.1.19",
