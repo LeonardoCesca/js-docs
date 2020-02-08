@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet"
 
 import { GlobalStyle } from "../../theme/globalStyle"
 
+import Corner from '../corner/index'
+
 import {
   Container,
   Hamburger,
@@ -83,6 +85,7 @@ const Layout = ({ children }) => {
         </ContainerHamburguer>
       )}
       <ContainerContent>{children}</ContainerContent>
+      <Corner />
     </Container>
   )
 }
