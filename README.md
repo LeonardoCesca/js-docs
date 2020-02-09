@@ -109,6 +109,12 @@ This project was made to contribute to the Open Source World and for adquire mor
        <sub><b>Laks Castro</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/oniag">
+        <img src="https://avatars1.githubusercontent.com/u/27209787?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Niag Alves</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  

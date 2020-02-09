@@ -29,5 +29,11 @@ module.exports = {
       url_avatar: "https://i.imgur.com/J7uIXVC.jpg",
       url_linkedin: "https://www.linkedin.com/in/laks-castro-9ab09a18b",
     },
+    {
+      name: "Niag Alves",
+      url_git: "https://github.com/oniag",
+      url_avatar: "https://avatars1.githubusercontent.com/u/27209787?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/niagsouza/",
+    },
   ],
 }
