@@ -15,9 +15,9 @@ export const ContainerMenu = styled.aside`
     height: calc(100vh - 195px);
     background-color: #282C35;
     border-right: 2px solid #FF9900;
-    padding-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     overflow: auto;
-    height: 100vh;
 
     ::-webkit-scrollbar {
       padding: 10px 0;
