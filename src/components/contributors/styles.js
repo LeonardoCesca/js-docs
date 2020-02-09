@@ -1,30 +1,15 @@
 import styled from "styled-components"
 
-export const ContributorsBox = styled.div`
-  margin: 0 auto;
-
-  @media (max-width: 768px) {
-    width: 90%;
-    height: 80%;
-    padding-bottom: 35px;
-    margin-bottom: 40px;
-  }
-`
+export const ContributorsBox = styled.div``
 
 export const ContributorsContainer = styled.section`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 85%;
-  height: 70%;
-  background-color: #282c35;
-  margin: 0 auto;
-  overflow-y: auto;
-  margin-bottom: 20px;
 
   background: #373c48;
+  padding: 12px;
   border-radius: 5px;
-  padding: 20px;
 
   ::-webkit-scrollbar {
     padding: 10px 0;
@@ -66,7 +51,7 @@ export const ContributorsTitle = styled.p`
   font-size: 24px;
   line-height: 34px;
   padding: 7px;
-  color: #efe0e0;
+  color: #eeeeee;
 
   &::after {
     content: "";
@@ -86,15 +71,17 @@ export const Author = styled.span`
 `
 
 export const Box = styled.span`
-  margin: 35px;
-  border: 2px solid rgb(255, 153, 0);
-  padding: 20px;
+  margin: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  padding: 1.5rem;
   border-radius: 4px;
-  height: auto;
-  margin-bottom: auto;
-
+  transition: all 1s ease-out;
+  &:hover {
+    border: 2px solid rgb(255, 153, 0);
+  }
   & img {
     object-fit: cover;
+    object-position: center;
   }
 `
 

@@ -1,9 +1,5 @@
-import React from "react"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { Link } from "gatsby"
-import { fadeIn } from "react-animations"
-
-const fadeInAnimation = keyframes`${fadeIn}`
 
 export const ContainerMenu = styled.aside`
   top: 0;
@@ -61,7 +57,7 @@ export const MenuHamburgerWrapper = styled.div`
 `
 
 export const ContainerHamburguer = styled.header`
-  border-right: 2px solid #314366;
+  border-right: 2px solid rgba(255, 255, 255, 0.28);
 
   background-color: #282c35;
   width: 64px;
@@ -97,51 +93,48 @@ export const Hamburger = styled.div`
 
   &::after,
   &::before {
+    width: 100%;
     transition: all 0.2s ease-in-out;
     content: "";
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: 2px;
     left: 50%;
-    background: #428dff;
+    background: #64676d;
   }
 
   &.opened {
     &::after,
     &::before {
-      width: 100%;
       top: 50%;
     }
     &::after {
-      transform: translate(-50%, 50%) rotate(45deg);
+      transform: translate(-50%, -50%) rotate(45deg);
     }
     &::before {
-      transform: translate(-50%, 50%) rotate(-45deg);
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
   &.closed {
     &::after,
     &::before {
-      transform: translate(-50%, 50%);
+      transform: translate(-50%, -50%);
     }
     &::after {
-      transform: translate(0%, 50%);
-      left: 0%;
       top: 5%;
     }
     &::before {
       top: 95%;
-      left: 30%;
-      transform: translate(0%, 50%);
     }
   }
 `
+
 export const HamburgerLine = styled.div`
   background: white;
 
   position: absolute;
 
-  width: 100%;
+  width: 65%;
   height: 2px;
 
   left: 50%;
@@ -149,14 +142,14 @@ export const HamburgerLine = styled.div`
 
   transition: all 0.2s ease-in-out;
 
-  background: #3b75cc;
+  background: #64676d;
   &.opened {
     transform: translate(100%, 50%);
     opacity: 0;
     visibility: hidden;
   }
   &.closed {
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     opacity: 1;
     visibility: visible;
   }
@@ -175,11 +168,7 @@ export const Container = styled.div`
   }
 `
 
-export const ContainerContent = styled.div`
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
-`
+export const ContainerContent = styled.div``
 
 export const StyledLink = styled(Link)`
   color: #ffffff;
@@ -202,8 +191,6 @@ export const Title = styled.p`
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 18px;
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: #ff9900;
+  color: #ff9900;
   text-align: center;
 `

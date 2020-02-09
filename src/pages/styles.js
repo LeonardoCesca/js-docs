@@ -2,13 +2,13 @@ import styled from "styled-components"
 
 export const Content = styled.div`
   width: 100%;
-  float: right;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
   background-color: #282c35;
-  overflow-y: scroll;
+
+  padding: 1rem;
 
   ::-webkit-scrollbar {
     padding: 10px 0;
@@ -24,10 +24,6 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     ::-webkit-scrollbar {
       padding: 10px 0;
       width: 8px;
@@ -48,17 +44,17 @@ export const Title = styled.h1`
   text-decoration-color: #ff9900;
   font-weight: bold;
   margin-bottom: 0;
-
-  @media (max-width: 768px) {
-    padding-top: 26px;
-  }
 `
 
 export const Paragraph = styled.p`
   padding: 26px 13px 18px 13px;
-  max-width: 70%;
+
   margin: 0 auto;
+
   font-weight: 300;
+
+  width: 100%;
+  max-width: 600px;
 
   & a {
     text-decoration: none;
@@ -66,7 +62,6 @@ export const Paragraph = styled.p`
   }
 
   @media (max-width: 768px) {
-    max-width: 100%;
     margin: 26px 13px 18px 13px;
     padding: 0;
   }

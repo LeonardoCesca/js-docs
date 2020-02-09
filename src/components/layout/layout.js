@@ -31,7 +31,7 @@ const SidebarItems = props => (
 )
 
 const Layout = ({ children }) => {
-  const [isOpened, setIsOpened] = useState(true)
+  const [isOpened, setIsOpened] = useState(false)
   const [isSetupComplete, setIsSetupComplete] = useState(false)
 
   useEffect(() => {
