@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
 export const ContributorsBox = styled.div`
-  width: 67%;
-  height: 76%;
   margin: 0 auto;
 
   @media (max-width: 768px) {
@@ -47,8 +45,12 @@ export const ContributorsContainer = styled.section`
     display: flex;
     justify-content: center;
 
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
     & svg {
-      padding: 9px;
       color: #fff;
     }
   }

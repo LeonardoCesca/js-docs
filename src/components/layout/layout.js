@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 
 import { GlobalStyle } from "../../theme/globalStyle"
 
-import Corner from '../corner/index'
+import Corner from "../corner/index"
 
 import {
   Container,
@@ -18,7 +18,8 @@ import {
   CloseButton,
   ContainerHamburguer,
   FadeIn,
-  ToggleButton,
+  HamburgerLine,
+  MenuHamburgerWrapper,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -30,12 +31,12 @@ const SidebarItems = props => (
 )
 
 const Layout = ({ children }) => {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isOpened, setIsOpened] = useState(true)
   const [isSetupComplete, setIsSetupComplete] = useState(false)
 
   useEffect(() => {
-    setIsSetupComplete(true);
-  },[isSetupComplete])
+    setIsSetupComplete(true)
+  }, [isSetupComplete])
 
   return (
     <Container>
@@ -59,40 +60,35 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <GlobalStyle />
-      {isVisible ? (
-        <>
-          <ContainerMenu>
+      <>
+        <MenuHamburgerWrapper>
+          <ContainerHamburguer>
+            <Hamburger
+              className={isOpened ? "opened" : "closed"}
+              onClick={() => setIsOpened(!isOpened)}
+            >
+              <HamburgerLine className={isOpened ? "opened" : "closed"} />
+            </Hamburger>
+          </ContainerHamburguer>
+        </MenuHamburgerWrapper>
+
+        <ContainerMenu className={isOpened ? "opened" : "closed"}>
+          <ContentMenu>
             <Title>JavaScript Doc's</Title>
-            <FadeIn>
-              <ContentMenu onClick={() => setIsVisible(!isVisible)}>
-                <SidebarItems to="/">Home</SidebarItems>
-                <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-                <SidebarItems to="/function/">Function</SidebarItems>
-                <SidebarItems to="/ternary-operator/">
-                  Ternary Operator
-                </SidebarItems>
-                <SidebarItems to="/if-else/">If Else</SidebarItems>
-                <SidebarItems to="/for/">Loop For</SidebarItems>
-                <CloseButton
-                  onClick={() => setIsVisible(!isVisible)}
-                ></CloseButton>
-              </ContentMenu>
-            </FadeIn>
-            <Footer made="Made with" />
-          </ContainerMenu>
-          <ToggleButton onClick={() => setIsVisible(!isVisible)} />
-        </>
-      ) : (
-        <ContainerHamburguer>
-          <FadeIn>
-            <Hamburger onClick={() => setIsVisible(!isVisible)} />
-          </FadeIn>
-        </ContainerHamburguer>
-      )}
+            <SidebarItems to="/">Home</SidebarItems>
+            <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
+            <SidebarItems to="/function/">Function</SidebarItems>
+            <SidebarItems to="/ternary-operator/">
+              Ternary Operator
+            </SidebarItems>
+            <SidebarItems to="/if-else/">If Else</SidebarItems>
+            <SidebarItems to="/for/">Loop For</SidebarItems>
+          </ContentMenu>
+          <Footer made="Made with" />
+        </ContainerMenu>
+      </>
       <ContainerContent>{children}</ContainerContent>
-      {isSetupComplete ? (
-        <Corner />
-      ) : null }
+      {isSetupComplete ? <Corner /> : null}
     </Container>
   )
 }
