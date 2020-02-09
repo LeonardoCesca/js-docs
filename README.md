@@ -115,6 +115,12 @@ This project was made to contribute to the Open Source World and for adquire mor
        <sub><b>Niag Alves</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/infinityover">
+        <img src="https://avatars2.githubusercontent.com/u/13989817?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Paulo Belfi</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  

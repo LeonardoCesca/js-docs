@@ -35,5 +35,11 @@ module.exports = {
       url_avatar: "https://avatars1.githubusercontent.com/u/27209787?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/niagsouza/",
     },
+    {
+      name: "Paulo Belfi",
+      url_git: "https://github.com/infinityover",
+      url_avatar: "https://avatars2.githubusercontent.com/u/13989817?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/paulo-belfi-a19477120/",
+    },
   ],
 }
