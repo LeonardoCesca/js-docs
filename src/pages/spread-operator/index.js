@@ -28,11 +28,13 @@ export default function SpreadOperator({ data }) {
         <Paragraph>
           Vamos construir uma função que receba 3 parametros e realize 
           a soma dos parametros para conseguirmos verificar o uso do 
-          Spread Operator
+          Spread Operator.
+          E realizar o clone de um objeto para que possamos
+           alterar os seus valores posteriormente de forma simples
         </Paragraph>
         <Iframes
           description="iframe spread operator"
-          url="https://jsfiddle.net/infinityover/gzs3k40x/7/embedded/js/"
+          url="https://jsfiddle.net/infinityover/5om9rgt8/12/embedded/js/"
         />
         <Title>{infos}</Title>
         <Links>
