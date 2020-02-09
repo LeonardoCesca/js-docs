@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 import { fadeIn } from 'react-animations';
-import menu from '../../../static/images/menu.svg';
+import menu from '../../../static/images/header/menu.svg';
 
 const fadeInAnimation = keyframes`${fadeIn}`;
 
