@@ -23,7 +23,7 @@ export const ContributorsContainer = styled.section`
   margin-bottom: 20px;
   background: #373c48;
   border-radius: 5px;
-  padding: 20px 0 0;
+  padding: 20px;
 
   ::-webkit-scrollbar {
     padding: 10px 0;

@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 import { fadeIn } from 'react-animations';
-import menu from '../../assets/img/menu.svg';
+import menu from '../../../static/images/menu.svg';
 
 const fadeInAnimation = keyframes`${fadeIn}`;
 
@@ -45,7 +45,7 @@ export const ContainerMenu = styled.aside`
     @media (max-width: 768px) {
       position: absolute;
       width: 100%;
-      height: auto;
+      height: 100vh;
       background-color: #282C35;
       border-right: 2px solid #FF9900;
       padding-top: 50px;
