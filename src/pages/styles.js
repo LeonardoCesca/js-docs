@@ -47,9 +47,8 @@ export const Title = styled.h1`
 `
 
 export const Paragraph = styled.p`
-  padding: 26px 13px 18px 13px;
-
-  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  padding-bottom: 0.85rem;
 
   font-weight: 300;
 
@@ -59,11 +58,6 @@ export const Paragraph = styled.p`
   & a {
     text-decoration: none;
     color: rgb(255, 153, 0);
-  }
-
-  @media (max-width: 768px) {
-    margin: 26px 13px 18px 13px;
-    padding: 0;
   }
 `
 

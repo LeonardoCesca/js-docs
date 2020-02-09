@@ -72,7 +72,10 @@ const Layout = ({ children }) => {
           </ContainerHamburguer>
         </MenuHamburgerWrapper>
 
-        <ContainerMenu className={isOpened ? "opened" : "closed"}>
+        <ContainerMenu
+          onClick={() => setIsOpened(!isOpened)}
+          className={isOpened ? "opened" : "closed"}
+        >
           <ContentMenu>
             <Title>JavaScript Doc's</Title>
             <SidebarItems to="/">Home</SidebarItems>

@@ -81,7 +81,7 @@ export const ContainerHamburguer = styled.header`
     justify-content: start;
     align-items: center;
     padding: 6px 1rem;
-    border-bottom: 2px solid #314366;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.28);
     border-right: none;
   }
 `
