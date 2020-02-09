@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 import { fadeIn } from 'react-animations';
+import menu from '../../../static/images/header/menu.svg';
 
 const fadeInAnimation = keyframes`${fadeIn}`;
 
@@ -59,7 +60,7 @@ export const ContentMenu = styled.div`
 `;
 
 export const Hamburger = styled.div`
-    background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
+    background: rgb(40, 44, 53) url(${menu}) no-repeat;
     background-size: 32px 57px;
     background-position: 10px top;
     width: 56px;
@@ -75,7 +76,7 @@ export const Hamburger = styled.div`
 
 export const ContainerHamburguer = styled.header`
     width: 56px;
-    border-right: 2px solid #314366;
+    border-right: 2px solid rgba(255, 255, 255, 0.28);
 
     @media (max-width: 768px) {
       width: 54px;
@@ -100,15 +101,18 @@ export const ContainerContent = styled.div`
     overflow: hidden;
 `;
 
-export const StyledLink = styled(props => <Link {...props} />)`
+
+export const StyledLink = styled(props => <Link {...props} getProps={({ isCurrent }) => {
+  return {
+    style: {
+      color: isCurrent ? '#ff9900' : ''
+    }
+  };
+}}
+/>)`
   color: #FFFFFF;
   text-decoration: none;  
   white-space: nowrap;
-
-  &:active {
-    color: gray;
-  }
-
   &:hover {
     color: #FF9900;
   }
@@ -120,10 +124,9 @@ export const Title = styled.p`
     font-weight: bold;
     width: 100%;
     font-size: 18px;
-    color: #FFFFFF;
-    text-decoration: underline;
-    text-decoration-color: #FF9900;
+    color: #FF9900;
     text-align: center;
+    padding-bottom: 20px;
 `;
 
 export const CloseButton = styled.span`

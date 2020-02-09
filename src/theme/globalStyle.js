@@ -17,4 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     display:flex;
     background: rgb(40, 44, 53);
   }
+
+  h1, h2, h3, h4, h5 {
+    text-decoration: none !important;
+    color: #ff9900;
+    font-weight: 700;
+  }
 `;

@@ -66,9 +66,9 @@ const Layout = ({ children }) => {
             <FadeIn>
               <ContentMenu onClick={() => setIsVisible(!isVisible)}>
                 <SidebarItems to="/">Home</SidebarItems>
-                <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-                <SidebarItems to="/function/">Function</SidebarItems>
-                <SidebarItems to="/ternary-operator/">
+                <SidebarItems to="/destructuring"  activeClassName="active">Destructuring</SidebarItems>
+                <SidebarItems to="/function">Function</SidebarItems>
+                <SidebarItems to="/ternary-operator">
                   Ternary Operator
                 </SidebarItems>
                 <SidebarItems to="/if-else/">If Else</SidebarItems>
