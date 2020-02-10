@@ -11,15 +11,13 @@ import {
   Hamburger,
   ContainerMenu,
   ContainerLink,
-  Title,
   ContainerContent,
   ContentMenu,
   StyledLink,
-  CloseButton,
   ContainerHamburguer,
-  FadeIn,
   HamburgerLine,
   MenuHamburgerWrapper,
+  Title,
 } from "./styles"
 
 import Footer from "../footer/index"

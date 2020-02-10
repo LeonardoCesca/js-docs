@@ -7,7 +7,6 @@ export const ContributorsContainer = styled.section`
   justify-content: space-around;
   flex-wrap: wrap;
 
-  background: #373c48;
   padding: 12px;
   border-radius: 5px;
 

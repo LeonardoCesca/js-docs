@@ -1,6 +1,22 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+export const TitleMenu = styled.h1`
+  text-decoration: underline;
+  text-decoration-color: #ff9900;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    margin-top: 37px;
+  }
+`
 export const ContainerMenu = styled.aside`
   top: 0;
   bottom: 0;
@@ -64,7 +80,6 @@ export const ContainerHamburguer = styled.header`
 
   display: flex;
   justify-content: center;
-
   z-index: 30;
 
   position: fixed;
