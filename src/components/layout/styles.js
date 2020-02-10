@@ -51,7 +51,7 @@ export const ContainerMenu = styled.aside`
   }
 
   @media screen and (max-width: 438px) {
-    top: 64px;
+    top: 0;
     left: 0;
     right: 0;
     border: none;
