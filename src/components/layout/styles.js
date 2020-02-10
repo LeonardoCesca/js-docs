@@ -65,6 +65,9 @@ export const ContentHeaderHamburger = styled.div`
   height: 34px;
   width: 34px;
   margin: 1rem 0;
+  @media screen and (max-width: 438px) {
+    margin: 0;
+  }
 `
 export const ContentMenu = styled.div`
   overflow-y: scroll;
