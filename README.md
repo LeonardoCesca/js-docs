@@ -121,6 +121,12 @@ This project was made to contribute to the Open Source World and for adquire mor
        <sub><b>Paulo Belfi</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/bluuesz">
+        <img src="https://avatars3.githubusercontent.com/u/51493181?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Wosley Vacemberg</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  
