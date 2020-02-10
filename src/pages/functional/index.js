@@ -13,7 +13,6 @@ export default function Functional({ data }) {
     subtitle,
     infos,
     mapWithFilter
-
   } = data.markdownRemark.frontmatter
   return (
     <Content>
