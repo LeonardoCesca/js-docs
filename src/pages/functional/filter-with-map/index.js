@@ -12,7 +12,6 @@ export default function MapFilter({ data }) {
       <Title>{mapWithFilter[0].title}</Title>
       <Paragraph>{mapWithFilter[1].subtitle}</Paragraph>
       <Iframes
-        style={{  height: "5px" }}
         description="iframe using combined operators"
         url="https://jsfiddle.net/bluues/pc45z1vh/39/embedded/js/"
       />
