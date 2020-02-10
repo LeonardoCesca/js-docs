@@ -23,7 +23,7 @@ export const TitleMenu = styled.h1`
   margin-bottom: 0;
 
   @media (max-width: 768px) {
-    margin-top: 37px;
+    margin-top: 2px;
   }
 `;
 export const ContainerMenu = styled.aside`
@@ -258,4 +258,15 @@ export const MenuItems = styled.div`
   padding-top: 15px;
   width: 0;
   margin: 0 auto;
+`;
+
+export const ContainerCloseBtn = styled.div`
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: rgb(40,44,53);
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
