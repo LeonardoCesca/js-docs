@@ -3,9 +3,9 @@ import styled from "styled-components"
 export const ContributorsBox = styled.div``
 
 export const ContributorsContainer = styled.section`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  justify-content: center;
 
   padding: 12px;
   border-radius: 5px;
@@ -45,7 +45,6 @@ export const ContributorsContainer = styled.section`
     height: 120px;
   }
 `
-
 export const ContributorsTitle = styled.p`
   font-size: 24px;
   line-height: 34px;
@@ -54,7 +53,7 @@ export const ContributorsTitle = styled.p`
 
   &::after {
     content: "";
-    height: 7px;
+    height: 3px;
     width: 5%;
     display: flex;
     justify-content: center;
@@ -70,19 +69,50 @@ export const Author = styled.span`
 `
 
 export const Box = styled.span`
-  background: #53565e;
+  background: #363b47;
   margin: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.28);
-  padding: 1.5rem;
+
+  box-shadow: 0 2px 10px rgba(30, 31, 36, 0.6);
+
   border-radius: 4px;
   transition: all 0.3s ease-out;
+
   &:hover {
-    border: 2px solid rgb(255, 153, 0);
+    /* border: 2px solid rgb(255, 153, 0); */
   }
-  & img {
+`
+export const BoxHeader = styled.header`
+  width: 100%;
+  height: 65px;
+  background: ${props => props.color};
+  position: relative;
+`
+export const ImgContainer = styled.div`
+  width: 85px;
+  height: 85px;
+  padding: 4px;
+  background: #363b47;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
   }
+`
+
+export const BoxContent = styled.header`
+  width: 100%;
+  padding: 1rem;
+  padding-top: 46.5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `
 
 export const Links = styled.div`

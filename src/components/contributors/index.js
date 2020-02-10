@@ -1,35 +1,58 @@
-import React from 'react';
+import React from "react"
 
-import metadata from '../../../config/metadata';
+import metadata from "../../../config/metadata"
 
-import { ContributorsBox, ContributorsContainer, ContributorsTitle, Author, Box, Links } from './styles';
+import generateNumber from "../../utils/generateRandomNumber"
 
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+  ContributorsBox,
+  ContributorsContainer,
+  ContributorsTitle,
+  Author,
+  Box,
+  ImgContainer,
+  BoxHeader,
+  BoxContent,
+  Links,
+} from "./styles"
 
-const contributors = metadata.contributors.map(({name, url_git, url_linkedin, url_avatar}, index) => {
-  return (
-    <Box key={index}>
-        <img src={url_avatar} alt="Avatar" />
-        <Links>
-          <a href={url_git} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href={url_linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-        </Links>
-      <Author>{name}</Author>
-    </Box>
-  )
-})
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+
+const contributors = metadata.contributors.map(
+  ({ name, url_git, url_linkedin, url_avatar }, index) => {
+    return (
+      <Box key={index}>
+        <BoxHeader
+          color={`rgb(${generateNumber(200, 255)}, ${generateNumber(
+            110,
+            190
+          )}, ${generateNumber(0, 20)})`}
+        >
+          <ImgContainer>
+            <img src={url_avatar} alt="Avatar" />
+          </ImgContainer>
+        </BoxHeader>
+        <BoxContent>
+          <Author>{name}</Author>
+          <Links>
+            <a href={url_git} target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href={url_linkedin} target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+          </Links>
+        </BoxContent>
+      </Box>
+    )
+  }
+)
 
 export default function Contribuitors() {
   return (
-      <ContributorsBox>
-        <ContributorsTitle>Contribuidores</ContributorsTitle>
-        <ContributorsContainer>
-          {contributors}
-        </ContributorsContainer>
-      </ContributorsBox>
+    <ContributorsBox>
+      <ContributorsTitle>Contribuidores</ContributorsTitle>
+      <ContributorsContainer>{contributors}</ContributorsContainer>
+    </ContributorsBox>
   )
 }
