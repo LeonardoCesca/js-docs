@@ -7,7 +7,7 @@ import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes"
 
-export default function Functional({ data }) {
+export default function ArrayHelpers({ data }) {
   const {
     title,
     subtitle,
@@ -48,7 +48,7 @@ export default function Functional({ data }) {
       <ContentInfos>
         <Title>{infos}</Title>
         <Links>
-          <StyledLink to="/functional/filter-with-map">
+          <StyledLink to="/array-helpers/filter-with-map">
             {mapWithFilter[0].title}
           </StyledLink>
         </Links>
