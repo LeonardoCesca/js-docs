@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 
 import { Helmet } from "react-helmet"
 
@@ -30,11 +30,6 @@ const SidebarItems = props => (
 
 const Layout = ({ children }) => {
   const [isOpened, setIsOpened] = useState(false)
-  const [isSetupComplete, setIsSetupComplete] = useState(false)
-
-  useEffect(() => {
-    setIsSetupComplete(true)
-  }, [isSetupComplete])
 
   return (
     <Container>
@@ -77,19 +72,21 @@ const Layout = ({ children }) => {
           <ContentMenu>
             <Title>JavaScript Doc's</Title>
             <SidebarItems to="/">Home</SidebarItems>
-            <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-            <SidebarItems to="/function/">Function</SidebarItems>
-            <SidebarItems to="/ternary-operator/">
-              Ternary Operator
+            <SidebarItems to="/destructuring" activeClassName="active">
+              Destructuring
             </SidebarItems>
+            <SidebarItems to="/function">Function</SidebarItems>
+            <SidebarItems to="/ternary-operator">Ternary Operator</SidebarItems>
             <SidebarItems to="/if-else/">If Else</SidebarItems>
             <SidebarItems to="/for/">Loop For</SidebarItems>
+            <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
+            <SidebarItems to="/spread-operator/">Spread Operator</SidebarItems>
           </ContentMenu>
           <Footer made="Made with" />
         </ContainerMenu>
       </>
       <ContainerContent>{children}</ContainerContent>
-      {isSetupComplete ? <Corner /> : null}
+      <Corner />
     </Container>
   )
 }

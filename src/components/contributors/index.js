@@ -20,11 +20,10 @@ import {
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
 function generateOrangeColor() {
-  console.log("asas")
-  return `rgb(${generateNumber(200, 255)}, ${generateNumber(
-    110,
-    190
-  )}, ${generateNumber(0, 20)})`
+  return `rgb(${generateNumber(180, 255)}, ${generateNumber(
+    100,
+    200
+  )}, ${generateNumber(0, 40)})`
 }
 
 const contributors = metadata.contributors.map(

@@ -41,5 +41,11 @@ module.exports = {
       url_avatar: "https://avatars2.githubusercontent.com/u/13989817?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/paulo-belfi-a19477120/",
     },
+    {
+      name: "Wosley",
+      url_git: "https://github.com/bluuesz",
+      url_avatar: "https://avatars3.githubusercontent.com/u/51493181?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/wosley-vacemberg-97151318a/",
+    },
   ],
 }

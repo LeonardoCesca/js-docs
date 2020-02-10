@@ -23,7 +23,7 @@ export const ContainerMenu = styled.aside`
   position: fixed;
   z-index: 20;
   background: #282c35;
-  left: 55px;
+  left: 64px;
 
   display: flex;
   flex-direction: column;

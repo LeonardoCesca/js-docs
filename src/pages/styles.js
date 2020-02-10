@@ -10,6 +10,10 @@ export const Content = styled.div`
 
   padding: 1rem;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   ::-webkit-scrollbar {
     padding: 10px 0;
     width: 8px;
@@ -46,6 +50,11 @@ export const Title = styled.h1`
   margin-bottom: 0;
 `
 
+export const Subtitle = styled.h2`
+  padding-top: 26px;
+  margin: 0;
+`
+
 export const Paragraph = styled.p`
   padding: 1.5rem 2rem;
   padding-bottom: 0.85rem;
@@ -76,9 +85,9 @@ export const Links = styled.div`
 `
 
 export const ContentInfos = styled.div`
-  padding-bottom: 25px;
+  padding: 25px 0 25px 0;
 
   @media (max-width: 768px) {
-    padding-bottom: 70px;
+    margin-bottom: 50px;
   }
 `

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Content, Title, Paragraph, Links, ContentInfos } from "../styles"
+import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes/"
@@ -22,9 +22,8 @@ export default function SpreadOperator({ data }) {
         description="iframe spread operator"
         url="https://jsfiddle.net/infinityover/9sjLfx2v/6/embedded/js/"
       />
-      <ContentInfos>
         <Paragraph>{explanation}</Paragraph>
-        <Title>Exemplo mais elaborado</Title>
+        <Subtitle>Exemplo mais elaborado</Subtitle>
         <Paragraph>
           Vamos construir uma função que receba 3 parametros e realize 
           a soma dos parametros para conseguirmos verificar o uso do 
@@ -35,8 +34,9 @@ export default function SpreadOperator({ data }) {
         <Iframes
           description="iframe spread operator"
           url="https://jsfiddle.net/infinityover/5om9rgt8/12/embedded/js/"
-        />
-        <Title>{infos}</Title>
+          />
+          <ContentInfos>
+        <Subtitle>{infos}</Subtitle>
         <Links>
           <StyledLink to="spread-operator/union-array/">
             {unionArray[0].title}

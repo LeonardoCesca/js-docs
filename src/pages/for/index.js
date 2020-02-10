@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Content, Title, Paragraph, Links, ContentInfos } from "../styles"
+import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes/"
@@ -21,23 +21,23 @@ export default function LoopFor({ data }) {
         description="iframe for loop"
         url="https://jsfiddle.net/LaksCastro/wzmq58ho/14/embedded/js/"
       />
-      <Title>Estrutura</Title>
+      <Subtitle>Estrutura</Subtitle>
       <Paragraph>
         A mágica acontece nesta estrutura: <br />
         for(x; y; z) <br />
         Note, é usado ";" para dividir as instruções, não ","
       </Paragraph>
-      <Title>Valor Inicial</Title>
+      <Subtitle>Valor Inicial</Subtitle>
       <Paragraph>
         X ou Valor Inicial, é o lugar que contém o valor inicial do contador,
       </Paragraph>
-      <Title>Expressão</Title>
+      <Subtitle>Expressão</Subtitle>
       <Paragraph>
         Y ou Expressão é onde será feita uma validação, ou seja, se a validação
         for verdadeira, o código dentro do For será executado // caso seja
         falso, o compilador sairá do bloco For
       </Paragraph>
-      <Title>Expressão Final</Title>
+      <Subtitle>Expressão Final</Subtitle>
       <Paragraph>
         Z é onde incrementamos o valor da variável inicial, no exemplo, estamos
         atribuindo a ela com o valor dela mesma mais 1
@@ -50,7 +50,7 @@ export default function LoopFor({ data }) {
       </Paragraph>
 
       <ContentInfos>
-        <Title>{infos}</Title>
+        <Subtitle>{infos}</Subtitle>
         <Links>
           <StyledLink to="/for/for-with-arrays">
             {forWithArrays[0].title}

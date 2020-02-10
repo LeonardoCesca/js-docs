@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Content, Title, Paragraph } from "../../styles"
+import { Content, Title, Subtitle, Paragraph } from "../../styles"
 
 import Iframes from "../../../components/iframes/"
 
@@ -15,7 +15,7 @@ export default function ForWithArrays({ data }) {
         description="iframe loop for with arrays"
         url="https://jsfiddle.net/LaksCastro/wzmq58ho/21/embedded/js/"
       />
-      <Title>Lógica</Title>
+      <Subtitle>Lógica</Subtitle>
       <Paragraph>
         Esta é uma das principais aplicações do For, a lógica dessa forma de uso
         é basicamente: declarar o valor inicial, que é 0. Iterar sobre um bloco
