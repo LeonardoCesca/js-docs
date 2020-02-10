@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const IframesStyle = styled.iframe`
   width: 70%;
+  z-index: 1;
   height: 285px;
   border-radius: 4px;
   border: none;
@@ -9,7 +10,7 @@ export const IframesStyle = styled.iframe`
 
   @media (max-width: 768px) {
     width: 90%;
-    height: 100%;
+    height: 90%;
   }
 
   @media (min-width: 1350px) {
@@ -17,12 +18,12 @@ export const IframesStyle = styled.iframe`
   }
 `
 export const Container = styled.div`
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
 export const Loader = styled.div`
- position: absolute;
- width: 60px;
- height: 60px;
+  width: 60px;
+  height: 60px;
 `

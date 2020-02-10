@@ -9,9 +9,11 @@ export default function Iframes({ url, description }) {
 
   return (
     <Container>
-      <Loader>
-        <ClipLoader size={45} color={"#ffa7c4"} loading={isLoader} />
-      </Loader>
+      {isLoader && (
+        <Loader>
+          <ClipLoader size={45} color={"#ffa7c4"} loading={isLoader} />
+        </Loader>
+      )}
       <IframesStyle
         onLoad={() => setIsLoader(false)}
         title={description}
