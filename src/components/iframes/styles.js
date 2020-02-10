@@ -20,7 +20,6 @@ export const Container = styled.div`
  display: flex;
  justify-content: center;
  align-items: center;
- background: green;
 `
 export const Loader = styled.div`
  position: absolute;
