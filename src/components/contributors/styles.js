@@ -1,15 +1,13 @@
 import styled from "styled-components"
 
 export const ContributorsBox = styled.div`
-  width: 67%;
-  height: 76%;
+  width: 100%;
+  height: 55%;
   margin: 0 auto;
-
+  padding-bottom: 50px;
+  
   @media (max-width: 768px) {
-    width: 90%;
-    height: 80%;
-    padding-bottom: 35px;
-    margin-bottom: 40px;
+    margin: 0 auto;
   }
 `
 
@@ -17,16 +15,19 @@ export const ContributorsContainer = styled.section`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 85%;
-  height: 70%;
-  background-color: #282c35;
+  width: 65%;
+  height: 75%;
   margin: 0 auto;
-  overflow-y: auto;
+  overflow-y: scroll;
   margin-bottom: 20px;
-
   background: #373c48;
-  border-radius: 5px;
   padding: 20px;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    overflow-y: unset;
+  }
 
   ::-webkit-scrollbar {
     padding: 10px 0;
@@ -64,7 +65,7 @@ export const ContributorsTitle = styled.p`
   font-size: 24px;
   line-height: 34px;
   padding: 7px;
-  color: #efe0e0;
+  color: #eeeeee;
 
   &::after {
     content: "";
@@ -85,11 +86,18 @@ export const Author = styled.span`
 
 export const Box = styled.span`
   margin: 35px;
-  border: 2px solid rgb(255, 153, 0);
+  border: 2px solid rgba(255,255,255,0.28);
   padding: 20px;
   border-radius: 4px;
   height: auto;
   margin-bottom: auto;
+  transition: 1s ease-out;
+  &:hover {
+    border: 2px solid rgb(255, 153, 0);
+  }
+  & img {
+    object-fit: cover;
+  }
 `
 
 export const Links = styled.div`

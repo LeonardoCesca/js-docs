@@ -1,22 +1,26 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { Helmet } from "react-helmet"
 
 import { GlobalStyle } from "../../theme/globalStyle"
+
+import Corner from '../corner/index'
 
 import {
   Container,
   Hamburger,
   ContainerMenu,
   ContainerLink,
-  Title,
+  TitleMenu,
   ContainerContent,
+  ContainerCloseBtn,
   ContentMenu,
   StyledLink,
   CloseButton,
   ContainerHamburguer,
   FadeIn,
   ToggleButton,
+  MenuItems,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -29,6 +33,11 @@ const SidebarItems = props => (
 
 const Layout = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false)
+  const [isSetupComplete, setIsSetupComplete] = useState(false)
+
+  useEffect(() => {
+    setIsSetupComplete(true);
+  },[isSetupComplete])
 
   return (
     <Container>
@@ -55,18 +64,23 @@ const Layout = ({ children }) => {
       {isVisible ? (
         <>
           <ContainerMenu>
-            <Title>JavaScript Doc's</Title>
             <FadeIn>
-              <ContentMenu onClick={() => setIsVisible(!isVisible)}>
-                <SidebarItems to="/">Home</SidebarItems>
-                <SidebarItems to="/destructuring/">Destructuring</SidebarItems>
-                <SidebarItems to="/function/">Function</SidebarItems>
-                <SidebarItems to="/ternary-operator/">
-                  Ternary Operator
-                </SidebarItems>
-                <CloseButton
-                  onClick={() => setIsVisible(!isVisible)}
-                ></CloseButton>
+          <ContainerCloseBtn>
+            <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
+          </ContainerCloseBtn>
+              <TitleMenu>JavaScript Doc's</TitleMenu>
+              <ContentMenu>
+                <MenuItems onClick={() => setIsVisible(!isVisible)}>
+                  <SidebarItems to="/">Home</SidebarItems>
+                  <SidebarItems to="/destructuring" activeClassName="active">Destructuring</SidebarItems>
+                  <SidebarItems to="/function">Function</SidebarItems>
+                  <SidebarItems to="/ternary-operator">
+                    Ternary Operator
+                  </SidebarItems>
+                  <SidebarItems to="/if-else/">If Else</SidebarItems>
+                  <SidebarItems to="/for/">Loop For</SidebarItems>
+                  <SidebarItems to="/spread-operator/">Spread Operator</SidebarItems>
+                </MenuItems>
               </ContentMenu>
             </FadeIn>
             <Footer made="Made with" />
@@ -81,6 +95,9 @@ const Layout = ({ children }) => {
         </ContainerHamburguer>
       )}
       <ContainerContent>{children}</ContainerContent>
+      {isSetupComplete ? (
+        <Corner />
+      ) : null }
     </Container>
   )
 }

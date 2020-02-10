@@ -88,27 +88,39 @@ This project was made to contribute to the Open Source World and for adquire mor
 
 ## 🎓 Authors / Contributors
 
-- **Bruno Ramires** - [GitHub](https://github.com/brunormferreira)
 
-  <a href="https://github.com/brunormferreira">
-    <img 
-    alt="Imagem do Autor Bruno Ramires" src="https://avatars0.githubusercontent.com/u/35575092?s=460&v=4" width="100">
-  </a>
-
-<br />
-
-- **Leonardo Cesca** - [GitHub](https://github.com/LeonardoCesca)
-
-  <a href="https://github.com/LeonardoCesca">
-    <img 
-    alt="Imagem do Autor Leonardo Cesca" src="https://avatars0.githubusercontent.com/u/22780548?s=460&v=4" width="100">
-  </a>
-  
- <br />
-  
-- **Laks Castro** - [GitHub](https://github.com/LaksCastro)
-
-  <a href="https://github.com/LaksCastro">
-    <img 
-    alt="Imagem do Autor Laks Castro" src="https://avatars2.githubusercontent.com/u/51419598?s=400&v=4" width="100">
-  </a>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/brunormferreira">
+        <img src="https://avatars0.githubusercontent.com/u/35575092?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Bruno Ramires</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LeonardoCesca">
+        <img src="https://avatars0.githubusercontent.com/u/22780548?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Leonardo Cesca</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/LaksCastro">
+        <img src="https://avatars2.githubusercontent.com/u/51419598?s=400&v=4" width="100px;" alt=""/><br />
+       <sub><b>Laks Castro</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/oniag">
+        <img src="https://avatars1.githubusercontent.com/u/27209787?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Niag Alves</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/infinityover">
+        <img src="https://avatars2.githubusercontent.com/u/13989817?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Paulo Belfi</b></sub>
+      </a>
+    </td>
+  </tr>
+ </table>
+ 

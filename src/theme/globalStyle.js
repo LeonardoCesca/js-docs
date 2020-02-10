@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: calc(100vh - 15px);
     font-family: 'Open Sans', 'Helvetica Neue', Ubuntu;
+    background: rgb(40, 44, 53);
   }
 
   div {
@@ -15,5 +16,11 @@ export const GlobalStyle = createGlobalStyle`
   #___gatsby > * {
     display:flex;
     background: rgb(40, 44, 53);
+  }
+
+  h1, h2, h3, h4, h5 {
+    text-decoration: none !important;
+    color: #ff9900;
+    font-weight: 700;
   }
 `;

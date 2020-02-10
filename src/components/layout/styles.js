@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 import { fadeIn } from 'react-animations';
+import menu from '../../../static/images/header/menu.svg';
 
 const fadeInAnimation = keyframes`${fadeIn}`;
 
@@ -9,14 +10,36 @@ export const FadeIn = styled.div`
   animation: 1.1s ${fadeInAnimation};
 `;
 
+export const TitleMenu = styled.h1`
+  text-decoration: underline;
+  text-decoration-color: #ff9900;
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  padding: 10px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+
+  @media (max-width: 768px) {
+    margin-top: 2px;
+  }
+`;
 export const ContainerMenu = styled.aside`
-    width: 20%;
-    height: calc(100vh - 195px);
-    background-color: #282C35;
-    border-right: 2px solid #FF9900;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    overflow: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 14.5%;
+  z-index: 20;
+  background: #282c35;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 2px solid #ff9900;
+  padding-top: 40px;
 
     ::-webkit-scrollbar {
       padding: 10px 0;
@@ -32,34 +55,53 @@ export const ContainerMenu = styled.aside`
     }
 
     & a {
-        text-decoration: none;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        letter-spacing: 0.1em;
-        text-decoration: none;
-        margin-bottom: 10px;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      margin-bottom: 10px;
     }
 
     @media (max-width: 768px) {
-      position: absolute;
+      text-decoration: none;
       width: 100%;
-      height: 100vh;
-      background-color: #282C35;
-      border-right: 2px solid #FF9900;
-      padding-top: 50px;
-      padding-bottom: 20px;
-      overflow: auto;
+      display: flex;
+      justify-content: center;
+      letter-spacing: 0.1em;
+      text-decoration: none;
     }
 `;
 
 export const ContentMenu = styled.div`
-  width: 0;
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    height: 60vh;
+    overflow-y: scroll;
+    padding-bottom: 10px;
+
+    @media (max-width: 768px) {
+      height: 85vh;
+    }
+
+  ::-webkit-scrollbar {
+      padding: 10px 0;
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgb(40, 44, 53);
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 153, 0);
+      border-radius: 20px;
+    }
 `;
 
 export const Hamburger = styled.div`
-    background: rgb(40, 44, 53) url("https://image.flaticon.com/icons/svg/660/660686.svg") no-repeat;
+    background: rgb(40, 44, 53) url(${menu}) no-repeat;
     background-size: 32px 57px;
     background-position: 10px top;
     width: 56px;
@@ -74,18 +116,31 @@ export const Hamburger = styled.div`
 `;
 
 export const ContainerHamburguer = styled.header`
-    width: 56px;
-    border-right: 2px solid #314366;
+    border-right: 2px solid rgba(255,255,255,0.28);
+    background-color: #282c35;
+    display: flex;
+    justify-content: center;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
 
     @media (max-width: 768px) {
-      width: 54px;
-      position: static;
-    }
+    height: 60px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 6px 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.28);
+    border-right: none;
+  }
 `;
 
 export const ContainerLink = styled.div`
     display: flex;
     text-align: center;
+    font-size: 14px;
 `;
 
 export const Container = styled.div`
@@ -100,16 +155,25 @@ export const ContainerContent = styled.div`
     overflow: hidden;
 `;
 
-export const StyledLink = styled(props => <Link {...props} />)`
+
+export const StyledLink = styled(props => <Link {...props} getProps={({ isCurrent }) => {
+  return {
+    style: {
+      color: isCurrent ? '#ff9900' : ''
+    }
+  };
+}}
+/>)`
   color: #FFFFFF;
   text-decoration: none;  
-
-  &:active {
-    color: gray;
-  }
+  white-space: nowrap;
 
   &:hover {
     color: #FF9900;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 15px;
   }
 `;
 
@@ -119,10 +183,9 @@ export const Title = styled.p`
     font-weight: bold;
     width: 100%;
     font-size: 18px;
-    color: #FFFFFF;
-    text-decoration: underline;
-    text-decoration-color: #FF9900;
+    color: #FF9900;
     text-align: center;
+    padding-bottom: 20px;
 `;
 
 export const CloseButton = styled.span`
@@ -167,9 +230,10 @@ export const ToggleButton = styled.div`
     width: 24px;
     height: 31px;
     background-color: #ff9900;
-    left: 16.85%;
+    left: 0;
     margin-top: 10px;
     cursor: pointer;
+    z-index: 20;
 
   @media (max-width: 768px) {
     display: none;
@@ -186,5 +250,23 @@ export const ToggleButton = styled.div`
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-right: 8px solid #282c35;
+  }
+`;
+
+export const MenuItems = styled.div`
+  display: block;
+  padding-top: 15px;
+  width: 0;
+  margin: 0 auto;
+`;
+
+export const ContainerCloseBtn = styled.div`
+  display: block;
+  width: 100%;
+  height: 115px;
+  background: rgb(40,44,53);
+
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
