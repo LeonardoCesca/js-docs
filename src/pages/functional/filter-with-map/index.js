@@ -12,7 +12,7 @@ export default function MapFilter({ data }) {
       <Title>{mapWithFilter[0].title}</Title>
       <Paragraph>{mapWithFilter[1].subtitle}</Paragraph>
       <Iframes
-        description="iframe using combined operators"
+        description="map with filter"
         url="https://jsfiddle.net/bluues/pc45z1vh/39/embedded/js/"
       />
       <Title>Em breve alguns exemplos mais praticos e proximos do mundo real!</Title>
