@@ -84,7 +84,7 @@ export const ContentMenu = styled.div`
     padding-bottom: 10px;
 
     @media (max-width: 768px) {
-      height: 52vh;
+      height: 64vh;
     }
 
   ::-webkit-scrollbar {
