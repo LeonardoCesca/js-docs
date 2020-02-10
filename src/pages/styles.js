@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Content = styled.div`
-  width: 100%;
+  width: 93%;
   float: right;
   height: 100vh;
   text-align: center;
@@ -50,7 +50,7 @@ export const Title = styled.h1`
   margin-bottom: 0;
 
   @media (max-width: 768px) {
-    padding-top: 26px;
+    padding-top: 75px;
   }
 `
 

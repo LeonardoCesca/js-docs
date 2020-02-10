@@ -4,7 +4,6 @@ export const ContributorsBox = styled.div`
   width: 100%;
   height: 55%;
   margin: 0 auto;
-  padding-top: 50px;
   padding-bottom: 50px;
   
   @media (max-width: 768px) {
