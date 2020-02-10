@@ -83,7 +83,6 @@ const Layout = ({ children }) => {
                   <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
                   <SidebarItems to="/spread-operator/">Spread Operator</SidebarItems>
                 </MenuItems>
-
               </ContentMenu>
             </FadeIn>
             <Footer made="Made with" />
