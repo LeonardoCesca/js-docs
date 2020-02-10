@@ -4,7 +4,6 @@ export const ContributorsBox = styled.div`
   width: 100%;
   height: 55%;
   margin: 0 auto;
-  padding-top: 50px;
   padding-bottom: 50px;
   
   @media (max-width: 768px) {
@@ -24,6 +23,11 @@ export const ContributorsContainer = styled.section`
   background: #373c48;
   padding: 20px;
   border-radius: 5px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    overflow-y: unset;
+  }
 
   ::-webkit-scrollbar {
     padding: 10px 0;

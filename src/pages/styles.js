@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Content = styled.div`
-  width: 100%;
+  width: 93%;
   float: right;
   height: 100vh;
   text-align: center;
@@ -9,6 +9,10 @@ export const Content = styled.div`
   color: #ffffff;
   background-color: #282c35;
   overflow-y: scroll;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   ::-webkit-scrollbar {
     padding: 10px 0;
@@ -50,9 +54,14 @@ export const Title = styled.h1`
   margin-bottom: 0;
 
   @media (max-width: 768px) {
-    padding-top: 26px;
+    padding-top: 75px;
   }
 `
+
+export const Subtitle = styled.h2`
+  padding-top: 26px;
+  margin: 0;
+`;
 
 export const Paragraph = styled.p`
   padding: 26px 13px 18px 13px;
@@ -83,9 +92,9 @@ export const Links = styled.div`
 `
 
 export const ContentInfos = styled.div`
-  padding-bottom: 25px;
+    padding: 25px 0 25px 0;
 
   @media (max-width: 768px) {
-    padding-bottom: 70px;
+    margin-bottom: 50px;
   }
 `

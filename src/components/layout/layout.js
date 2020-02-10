@@ -11,14 +11,16 @@ import {
   Hamburger,
   ContainerMenu,
   ContainerLink,
-  Title,
+  TitleMenu,
   ContainerContent,
+  ContainerCloseBtn,
   ContentMenu,
   StyledLink,
   CloseButton,
   ContainerHamburguer,
   FadeIn,
   ToggleButton,
+  MenuItems,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -62,21 +64,26 @@ const Layout = ({ children }) => {
       {isVisible ? (
         <>
           <ContainerMenu>
-            <Title>JavaScript Doc's</Title>
             <FadeIn>
-              <ContentMenu onClick={() => setIsVisible(!isVisible)}>
-                <SidebarItems to="/">Home</SidebarItems>
-                <SidebarItems to="/destructuring"  activeClassName="active">Destructuring</SidebarItems>
-                <SidebarItems to="/function">Function</SidebarItems>
-                <SidebarItems to="/ternary-operator">
-                  Ternary Operator
-                </SidebarItems>
-                <SidebarItems to="/if-else">If Else</SidebarItems>
-                <SidebarItems to="/for">Loop For</SidebarItems>
-                <SidebarItems to="/functional">Map, reduce, filter</SidebarItems>
-                <CloseButton
-                  onClick={() => setIsVisible(!isVisible)}
-                ></CloseButton>
+
+          <ContainerCloseBtn>
+            <CloseButton onClick={() => setIsVisible(!isVisible)}></CloseButton>
+          </ContainerCloseBtn>
+              <TitleMenu>JavaScript Doc's</TitleMenu>
+              <ContentMenu>
+                <MenuItems onClick={() => setIsVisible(!isVisible)}>
+                  <SidebarItems to="/">Home</SidebarItems>
+                  <SidebarItems to="/destructuring" activeClassName="active">Destructuring</SidebarItems>
+                  <SidebarItems to="/function">Function</SidebarItems>
+                  <SidebarItems to="/ternary-operator">
+                    Ternary Operator
+                  </SidebarItems>
+                  <SidebarItems to="/if-else/">If Else</SidebarItems>
+                  <SidebarItems to="/for/">Loop For</SidebarItems>
+                  <SidebarItems to="/functional">Map, reduce, filter</SidebarItems>
+                  <SidebarItems to="/spread-operator/">Spread Operator</SidebarItems>
+                </MenuItems>
+
               </ContentMenu>
             </FadeIn>
             <Footer made="Made with" />
