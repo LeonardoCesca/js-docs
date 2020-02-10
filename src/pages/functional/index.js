@@ -53,7 +53,6 @@ export default function Functional({ data }) {
           </StyledLink>
         </Links>
       </ContentInfos>
-
     </Content>
   )
 }
