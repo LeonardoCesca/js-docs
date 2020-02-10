@@ -54,6 +54,11 @@ export const Title = styled.h1`
   }
 `
 
+export const Subtitle = styled.h2`
+  padding-top: 10px 0 0 0;
+  margin: 0;
+`;
+
 export const Paragraph = styled.p`
   padding: 26px 13px 18px 13px;
   max-width: 70%;
@@ -83,9 +88,9 @@ export const Links = styled.div`
 `
 
 export const ContentInfos = styled.div`
-  padding-bottom: 25px;
+    margin: 25px 0 25px 0;
 
   @media (max-width: 768px) {
-    padding-bottom: 70px;
+    margin-bottom: 50px;
   }
 `

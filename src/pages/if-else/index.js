@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Content, Title, Paragraph, Links, ContentInfos } from "../styles"
+import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes/"
@@ -22,7 +22,7 @@ export default function ElseIf({ data }) {
         url="https://jsfiddle.net/LaksCastro/xLqh6tw5/12/embedded/js/"
       />
 
-      <Title>Complementando com o operador Else</Title>
+      <Subtitle>Complementando com o operador Else</Subtitle>
       <Paragraph>
         E se quisermos executar um código pra caso a condição seja verdadeira e
         outro código para caso a condição seja falsa? Fazemos duas comparações?
@@ -33,7 +33,7 @@ export default function ElseIf({ data }) {
         url="https://jsfiddle.net/LaksCastro/94ocLtm7/7/embedded/js/"
       />
       <ContentInfos>
-        <Title>{infos}</Title>
+        <Subtitle>{infos}</Subtitle>
         <Links>
           <StyledLink to="if-else/combined-if-else/">
             {ifElseWithElseIf[0].title}

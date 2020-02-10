@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import { Content, Title, Paragraph, Links, ContentInfos } from '../styles';
+import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from '../styles';
 import { StyledLink } from '../../components/layout/styles';
 
 import Iframes from '../../components/iframes/';
@@ -21,7 +21,7 @@ export default function Destructuring ({data}) {
       </Paragraph>
         <Iframes description="iframe destructuring 2" url="https://jsfiddle.net/leonardocesca/gLzxme57/3/embedded/js/" />
       <ContentInfos>
-        <Title>{data.markdownRemark.frontmatter.infos}</Title>
+        <Subtitle>{data.markdownRemark.frontmatter.infos}</Subtitle>
         <Links>
           <StyledLink to='destructuring/destructuring-objects/'>{data.markdownRemark.frontmatter.destructObj[0].title}</StyledLink>
         </Links>

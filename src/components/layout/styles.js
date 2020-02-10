@@ -263,7 +263,7 @@ export const MenuItems = styled.div`
 export const ContainerCloseBtn = styled.div`
   display: block;
   width: 100%;
-  height: 100px;
+  height: 115px;
   background: rgb(40,44,53);
 
   @media (min-width: 769px) {

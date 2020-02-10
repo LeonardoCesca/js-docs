@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import { Content, Title, Paragraph, Links, ContentInfos } from "../styles"
+import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes/"
@@ -22,9 +22,8 @@ export default function TernaryOperator({ data }) {
         description="iframe ternary operator"
         url="https://jsfiddle.net/LaksCastro/Lpua0z39/7/embedded/js/"
       />
-      <ContentInfos>
         <Paragraph>{explanation}</Paragraph>
-        <Title>Exemplo mais elaborado</Title>
+        <Subtitle>Exemplo mais elaborado</Subtitle>
         <Paragraph>
           Vamos construir uma função que recebe dois números e retorna um
           booleano que, se a soma entre eles for um numero par retorna
@@ -34,14 +33,15 @@ export default function TernaryOperator({ data }) {
         <Iframes
           description="iframe ternary operator"
           url="https://jsfiddle.net/LaksCastro/dp8zjgay/1/embedded/js/"
-        />
-        <Title>{infos}</Title>
-        <Links>
-          <StyledLink to="ternary-operator/combined-ternary-operator/">
-            {combinedTernaryOperator[0].title}
-          </StyledLink>
-        </Links>
-      </ContentInfos>
+          />
+        <ContentInfos>
+          <Subtitle>{infos}</Subtitle>
+          <Links>
+            <StyledLink to="ternary-operator/combined-ternary-operator/">
+              {combinedTernaryOperator[0].title}
+            </StyledLink>
+          </Links>
+        </ContentInfos>
     </Content>
   )
 }
