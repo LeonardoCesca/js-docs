@@ -36,6 +36,7 @@ export const ContainerMenu = styled.aside`
   background: #282c35;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   border-right: 2px solid #ff9900;
@@ -84,7 +85,7 @@ export const ContentMenu = styled.div`
     padding-bottom: 10px;
 
     @media (max-width: 768px) {
-      height: 64vh;
+      height: 52vh;
     }
 
   ::-webkit-scrollbar {
