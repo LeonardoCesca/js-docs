@@ -24,6 +24,11 @@ export const ContributorsContainer = styled.section`
   padding: 20px;
   border-radius: 5px;
 
+  @media (max-width: 768px) {
+    height: auto;
+    overflow-y: unset;
+  }
+
   ::-webkit-scrollbar {
     padding: 10px 0;
     width: 8px;
