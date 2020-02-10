@@ -8,7 +8,7 @@ export const FooterContent = styled.footer`
   color: #fff;
 
   @media (max-width: 768px) {
-    width: 100%;
+    display: none;
   }
 `
 

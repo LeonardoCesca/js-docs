@@ -36,7 +36,6 @@ export const ContainerMenu = styled.aside`
   background: #282c35;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: space-between;
   align-items: center;
   border-right: 2px solid #ff9900;
@@ -72,7 +71,6 @@ export const ContainerMenu = styled.aside`
       justify-content: center;
       letter-spacing: 0.1em;
       text-decoration: none;
-      margin-bottom: 10px;
     }
 `;
 
@@ -85,7 +83,7 @@ export const ContentMenu = styled.div`
     padding-bottom: 10px;
 
     @media (max-width: 768px) {
-      height: 52vh;
+      height: 85vh;
     }
 
   ::-webkit-scrollbar {
@@ -169,8 +167,13 @@ export const StyledLink = styled(props => <Link {...props} getProps={({ isCurren
   color: #FFFFFF;
   text-decoration: none;  
   white-space: nowrap;
+
   &:hover {
     color: #FF9900;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 15px;
   }
 `;
 
