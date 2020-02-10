@@ -16,9 +16,9 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
 
 ## 🚀 Fork e Contribuição
 
-1.  **Forking repositório**
+1.  **Forkando o repositório**
 
-    Fork o repositório e configure o set-up UPSTREAM:
+    Fork o repositório e adicione-o como UPSTREAM:
 
     ```shell
     $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
@@ -80,7 +80,7 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
 
 1.  **Abra o código fonte e comece a editar!**
 
-    Your site is now running at `http://localhost:8000`!
+    A aplicação estará rodando atraveś do link `http://localhost:8000`!
 
 ## 💫 Deploy
 
