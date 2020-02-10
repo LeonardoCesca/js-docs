@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled, { keyframes, css } from "styled-components"
 
 export const ContributorsBox = styled.div``
 
@@ -45,20 +45,25 @@ export const ContributorsContainer = styled.section`
     height: 120px;
   }
 `
+export const ContributorsTitleWrapper = styled.div`
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+`
 export const ContributorsTitle = styled.p`
   font-size: 24px;
-  line-height: 34px;
-  padding: 7px;
   color: #eeeeee;
-
+  position: relative;
   &::after {
     content: "";
-    height: 3px;
-    width: 5%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    background: #bd8f65;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    background: #ff9900;
+    border-radius: 50%;
+    transform: translateY(50%);
   }
 `
 
@@ -75,17 +80,34 @@ export const Box = styled.span`
   box-shadow: 0 2px 10px rgba(30, 31, 36, 0.6);
 
   border-radius: 4px;
+
+  overflow: hidden;
   transition: all 0.3s ease-out;
 
   &:hover {
-    /* border: 2px solid rgb(255, 153, 0); */
+    background: #404654;
   }
 `
+function generateAnimation(one, two) {
+  const animationColor = keyframes`
+    to {
+      background: ${one};
+    }
+    from {
+      background: ${two};
+    }
+  `
+  const animation = css`
+    animation: ${animationColor} 5s linear 0s infinite alternate;
+  `
+  return animation
+}
 export const BoxHeader = styled.header`
   width: 100%;
   height: 65px;
-  background: ${props => props.color};
+  background: ${props => props.colorOne};
   position: relative;
+  ${props => generateAnimation(props.colorOne, props.colorTwo)}
 `
 export const ImgContainer = styled.div`
   width: 85px;

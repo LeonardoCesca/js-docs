@@ -14,19 +14,26 @@ import {
   BoxHeader,
   BoxContent,
   Links,
+  ContributorsTitleWrapper,
 } from "./styles"
 
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+
+function generateOrangeColor() {
+  console.log("asas")
+  return `rgb(${generateNumber(200, 255)}, ${generateNumber(
+    110,
+    190
+  )}, ${generateNumber(0, 20)})`
+}
 
 const contributors = metadata.contributors.map(
   ({ name, url_git, url_linkedin, url_avatar }, index) => {
     return (
       <Box key={index}>
         <BoxHeader
-          color={`rgb(${generateNumber(200, 255)}, ${generateNumber(
-            110,
-            190
-          )}, ${generateNumber(0, 20)})`}
+          colorOne={generateOrangeColor()}
+          colorTwo={generateOrangeColor()}
         >
           <ImgContainer>
             <img src={url_avatar} alt="Avatar" />
@@ -51,7 +58,9 @@ const contributors = metadata.contributors.map(
 export default function Contribuitors() {
   return (
     <ContributorsBox>
-      <ContributorsTitle>Contribuidores</ContributorsTitle>
+      <ContributorsTitleWrapper>
+        <ContributorsTitle>Contribuidores</ContributorsTitle>
+      </ContributorsTitleWrapper>
       <ContributorsContainer>{contributors}</ContributorsContainer>
     </ContributorsBox>
   )
