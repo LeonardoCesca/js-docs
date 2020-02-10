@@ -56,8 +56,8 @@ export const ContributorsTitle = styled.p`
   position: relative;
   &::after {
     content: "";
-    height: 10px;
-    width: 10px;
+    height: 7px;
+    width: 7px;
     position: absolute;
     bottom: 100%;
     left: 100%;
