@@ -2,12 +2,11 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const TitleMenu = styled.h1`
-  text-decoration: underline;
-  text-decoration-color: #ff9900;
   font-weight: bold;
   font-size: 17px;
   border-bottom: 1px solid;
   border-top: 1px solid;
+  border-color: #ff9900;
   padding: 10px;
   text-align: center;
   margin-top: 15px;
@@ -21,9 +20,9 @@ export const ContainerMenu = styled.aside`
   top: 0;
   bottom: 0;
   position: fixed;
-  z-index: 20;
+  z-index: 30;
   background: #282c35;
-  left: 64px;
+  left: 0;
 
   display: flex;
   flex-direction: column;
@@ -59,9 +58,18 @@ export const ContainerMenu = styled.aside`
   }
 `
 
+export const ContentHeader = styled.div`
+  padding-bottom: 0;
+`
+export const ContentHeaderHamburger = styled.div`
+  height: 34px;
+  width: 34px;
+  margin: 1rem 0;
+`
 export const ContentMenu = styled.div`
   overflow-y: scroll;
   flex: 1;
+  padding: 1rem 8px;
 `
 export const MenuHamburgerWrapper = styled.div`
   width: 64px;
@@ -80,7 +88,7 @@ export const ContainerHamburguer = styled.header`
 
   display: flex;
   justify-content: center;
-  z-index: 30;
+  z-index: 20;
 
   position: fixed;
   top: 0;
@@ -100,6 +108,13 @@ export const ContainerHamburguer = styled.header`
     border-right: none;
   }
 `
+export const HamburgerWrapper = styled.div`
+  position: fixed;
+  top: 1rem;
+  left: 12px;
+  z-index: 50;
+`
+
 export const Hamburger = styled.div`
   width: 35px;
   height: 35px;
@@ -115,13 +130,13 @@ export const Hamburger = styled.div`
     width: 100%;
     height: 2px;
     left: 50%;
-    background: #64676d;
   }
 
   &.opened {
     &::after,
     &::before {
       top: 50%;
+      background: #ff9900;
     }
     &::after {
       transform: translate(-50%, -50%) rotate(45deg);
@@ -134,6 +149,7 @@ export const Hamburger = styled.div`
     &::after,
     &::before {
       transform: translate(-50%, -50%);
+      background: #64676d;
     }
     &::after {
       top: 5%;

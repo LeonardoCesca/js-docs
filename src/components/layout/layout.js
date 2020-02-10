@@ -8,6 +8,7 @@ import Corner from "../corner/index"
 
 import {
   Container,
+  HamburgerWrapper,
   Hamburger,
   ContainerMenu,
   ContainerLink,
@@ -18,6 +19,9 @@ import {
   HamburgerLine,
   MenuHamburgerWrapper,
   Title,
+  TitleMenu,
+  ContentHeader,
+  ContentHeaderHamburger,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -55,22 +59,18 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <>
         <MenuHamburgerWrapper>
-          <ContainerHamburguer>
-            <Hamburger
-              className={isOpened ? "opened" : "closed"}
-              onClick={() => setIsOpened(!isOpened)}
-            >
-              <HamburgerLine className={isOpened ? "opened" : "closed"} />
-            </Hamburger>
-          </ContainerHamburguer>
+          <ContainerHamburguer />
         </MenuHamburgerWrapper>
 
         <ContainerMenu
           onClick={() => setIsOpened(!isOpened)}
           className={isOpened ? "opened" : "closed"}
         >
+          <ContentHeader>
+            <ContentHeaderHamburger />
+            <TitleMenu>JavaScript Doc's</TitleMenu>
+          </ContentHeader>
           <ContentMenu>
-            <Title>JavaScript Doc's</Title>
             <SidebarItems to="/">Home</SidebarItems>
             <SidebarItems to="/destructuring" activeClassName="active">
               Destructuring
@@ -84,6 +84,15 @@ const Layout = ({ children }) => {
           </ContentMenu>
           <Footer made="Made with" />
         </ContainerMenu>
+
+        <HamburgerWrapper>
+          <Hamburger
+            className={isOpened ? "opened" : "closed"}
+            onClick={() => setIsOpened(!isOpened)}
+          >
+            <HamburgerLine className={isOpened ? "opened" : "closed"} />
+          </Hamburger>
+        </HamburgerWrapper>
       </>
       <ContainerContent>{children}</ContainerContent>
       <Corner />
