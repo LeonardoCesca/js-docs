@@ -80,7 +80,7 @@ const Layout = ({ children }) => {
                   </SidebarItems>
                   <SidebarItems to="/if-else/">If Else</SidebarItems>
                   <SidebarItems to="/for/">Loop For</SidebarItems>
-                  <SidebarItems to="/functional">Map, reduce, filter</SidebarItems>
+                  <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
                   <SidebarItems to="/spread-operator/">Spread Operator</SidebarItems>
                 </MenuItems>
 
