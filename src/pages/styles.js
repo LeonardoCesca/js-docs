@@ -10,6 +10,10 @@ export const Content = styled.div`
   background-color: #282c35;
   overflow-y: scroll;
 
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
   ::-webkit-scrollbar {
     padding: 10px 0;
     width: 8px;
@@ -55,7 +59,7 @@ export const Title = styled.h1`
 `
 
 export const Subtitle = styled.h2`
-  padding-top: 10px 0 0 0;
+  padding-top: 26px;
   margin: 0;
 `;
 
@@ -88,7 +92,7 @@ export const Links = styled.div`
 `
 
 export const ContentInfos = styled.div`
-    margin: 25px 0 25px 0;
+    padding: 25px 0 25px 0;
 
   @media (max-width: 768px) {
     margin-bottom: 50px;
