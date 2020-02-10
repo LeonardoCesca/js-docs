@@ -23,5 +23,6 @@ export const Container = styled.div`
 `
 export const Loader = styled.div`
  position: absolute;
- width: 100px;
+ width: 60px;
+ height: 60px;
 `
