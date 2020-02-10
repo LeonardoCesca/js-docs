@@ -59,7 +59,7 @@ export default function ArrayHelpers({ data }) {
 
 export const pageQuery = graphql`
   query functionsPures {
-    markdownRemark(fileAbsolutePath: { regex: "/functional.md/" }) {
+    markdownRemark(fileAbsolutePath: { regex: "/array-helpers.md/" }) {
       frontmatter {
         title
         subtitle

@@ -22,7 +22,7 @@ export default function MapFilter({ data }) {
 
 export const pageQuery = graphql`
   query functiosnPures {
-    markdownRemark(fileAbsolutePath: { regex: "/functional.md/" }) {
+    markdownRemark(fileAbsolutePath: { regex: "/array-helpers.md/" }) {
       frontmatter {
         mapWithFilter {
           title
