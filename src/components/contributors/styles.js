@@ -70,11 +70,12 @@ export const Author = styled.span`
 `
 
 export const Box = styled.span`
+  background: #53565e;
   margin: 8px;
   border: 2px solid rgba(255, 255, 255, 0.28);
   padding: 1.5rem;
   border-radius: 4px;
-  transition: all 1s ease-out;
+  transition: all 0.3s ease-out;
   &:hover {
     border: 2px solid rgb(255, 153, 0);
   }

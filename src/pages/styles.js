@@ -52,6 +52,8 @@ export const Paragraph = styled.p`
 
   font-weight: 300;
 
+  line-height: 1.8;
+
   margin: 0 auto;
 
   width: 100%;

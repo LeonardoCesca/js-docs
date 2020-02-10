@@ -15,7 +15,8 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Gatsby
+          {" "}
+          Gatsby{" "}
         </a>
         e com a cooperação do
         <a
@@ -23,6 +24,7 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
         >
+          {" "}
           JSFiddle
         </a>
         . Com a intenção de contribuir com o Open Source, cooperando e ajudando
