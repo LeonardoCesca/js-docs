@@ -1,27 +1,13 @@
-import styled from "styled-components"
+import styled, { keyframes, css } from "styled-components"
 
-export const ContributorsBox = styled.div`
-  width: 100%;
-  height: 55%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  
-  @media (max-width: 768px) {
-    margin: 0 auto;
-  }
-`
+export const ContributorsBox = styled.div``
 
 export const ContributorsContainer = styled.section`
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 65%;
-  height: 75%;
-  margin: 0 auto;
-  overflow-y: scroll;
-  margin-bottom: 20px;
-  background: #373c48;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  justify-content: center;
+
+  padding: 12px;
   border-radius: 5px;
 
   @media (max-width: 768px) {
@@ -48,8 +34,12 @@ export const ContributorsContainer = styled.section`
     display: flex;
     justify-content: center;
 
+    padding: 12px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 0.8;
+    }
     & svg {
-      padding: 9px;
       color: #fff;
     }
   }
@@ -60,21 +50,25 @@ export const ContributorsContainer = styled.section`
     height: 120px;
   }
 `
-
+export const ContributorsTitleWrapper = styled.div`
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+`
 export const ContributorsTitle = styled.p`
   font-size: 24px;
-  line-height: 34px;
-  padding: 7px;
   color: #eeeeee;
-
+  position: relative;
   &::after {
     content: "";
     height: 7px;
-    width: 5%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    background: #bd8f65;
+    width: 7px;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    background: #ff9900;
+    border-radius: 50%;
+    transform: translateY(50%);
   }
 `
 
@@ -85,19 +79,67 @@ export const Author = styled.span`
 `
 
 export const Box = styled.span`
-  margin: 35px;
-  border: 2px solid rgba(255,255,255,0.28);
-  padding: 20px;
+  background: #363b47;
+  margin: 8px;
+
+  box-shadow: 0 2px 10px rgba(30, 31, 36, 0.6);
+
   border-radius: 4px;
-  height: auto;
-  margin-bottom: auto;
-  transition: 1s ease-out;
+
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+
   &:hover {
-    border: 2px solid rgb(255, 153, 0);
+    background: #404654;
   }
-  & img {
+`
+function generateAnimation(one, two) {
+  const animationColor = keyframes`
+    to {
+      background: ${one};
+    }
+    from {
+      background: ${two};
+    }
+  `
+  const animation = css`
+    animation: ${animationColor} 5s linear 0s infinite alternate;
+  `
+  return animation
+}
+export const BoxHeader = styled.header`
+  width: 100%;
+  height: 65px;
+  background: ${props => props.colorOne};
+  position: relative;
+  ${props => generateAnimation(props.colorOne, props.colorTwo)}
+`
+export const ImgContainer = styled.div`
+  width: 85px;
+  height: 85px;
+  padding: 4px;
+  background: #363b47;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
   }
+`
+
+export const BoxContent = styled.header`
+  width: 100%;
+  padding: 1rem;
+  padding-top: 46.5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `
 
 export const Links = styled.div`

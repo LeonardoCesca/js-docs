@@ -5,16 +5,15 @@
  */
 
 module.exports = {
-  plugins: 
-  [
+  plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
-    resolve: `gatsby-source-filesystem`,
-        options: {
-          name: `markdown`,
-          path: `${__dirname}/src/markdown/`
-        }
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/markdown/`,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -25,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
-        displayName: process.env.NODE_ENV !== 'production',
+        displayName: process.env.NODE_ENV !== "production",
       },
     },
     {
@@ -54,5 +53,16 @@ module.exports = {
         trackingId: "UA-150638637-2",
       },
     },
-  ]
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Open Sans`,
+            variants: [`400`, `700`],
+          },
+        ],
+      },
+    },
+  ],
 }

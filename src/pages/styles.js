@@ -1,14 +1,14 @@
 import styled from "styled-components"
 
 export const Content = styled.div`
-  width: 93%;
-  float: right;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
   background-color: #282c35;
-  overflow-y: scroll;
+
+  padding: 1rem;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -28,10 +28,6 @@ export const Content = styled.div`
   }
 
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     ::-webkit-scrollbar {
       padding: 10px 0;
       width: 8px;
@@ -52,32 +48,29 @@ export const Title = styled.h1`
   text-decoration-color: #ff9900;
   font-weight: bold;
   margin-bottom: 0;
-
-  @media (max-width: 768px) {
-    padding-top: 75px;
-  }
 `
 
 export const Subtitle = styled.h2`
   padding-top: 26px;
   margin: 0;
-`;
+`
 
 export const Paragraph = styled.p`
-  padding: 26px 13px 18px 13px;
-  max-width: 70%;
-  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  padding-bottom: 0.85rem;
+
   font-weight: 300;
+
+  line-height: 1.8;
+
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 600px;
 
   & a {
     text-decoration: none;
     color: rgb(255, 153, 0);
-  }
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-    margin: 26px 13px 18px 13px;
-    padding: 0;
   }
 `
 
@@ -92,7 +85,7 @@ export const Links = styled.div`
 `
 
 export const ContentInfos = styled.div`
-    padding: 25px 0 25px 0;
+  padding: 25px 0 25px 0;
 
   @media (max-width: 768px) {
     margin-bottom: 50px;
