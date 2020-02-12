@@ -25,6 +25,6 @@ export const Container = styled.div`
 `
 
 export const Loader = styled.div`
-  width: 60px;
-  height: 60px;
+    position: absolute;
+    width: auto;
 `
