@@ -6,7 +6,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', 'Helvetica Neue', Ubuntu;
     background: rgb(40, 44, 53);
   }
-  *{
+
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -15,10 +16,12 @@ export const GlobalStyle = createGlobalStyle`
   div {
     width: 100%;
   }
+
   #___gatsby > * {
     display:flex;
     background: rgb(40, 44, 53);
   }
+
   h1, h2, h3, h4, h5 {
     text-decoration: none !important;
     color: #ff9900;

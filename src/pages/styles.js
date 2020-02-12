@@ -7,7 +7,6 @@ export const Content = styled.div`
   font-weight: bold;
   color: #ffffff;
   background-color: #282c35;
-
   padding: 1rem;
 
   @media (max-width: 768px) {
@@ -18,10 +17,12 @@ export const Content = styled.div`
     padding: 10px 0;
     width: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: rgb(40, 44, 53);
     border-radius: 20px;
   }
+  
   ::-webkit-scrollbar-thumb {
     background: rgb(255, 153, 0);
     border-radius: 20px;
@@ -32,10 +33,12 @@ export const Content = styled.div`
       padding: 10px 0;
       width: 8px;
     }
+
     ::-webkit-scrollbar-track {
       background: transparent;
       border-radius: 20px;
     }
+
     ::-webkit-scrollbar-thumb {
       background: transparent;
       border-radius: 20px;
@@ -44,10 +47,9 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
-  text-decoration: underline;
-  text-decoration-color: #ff9900;
-  font-weight: bold;
-  margin-bottom: 0;
+  text-decoration: none !important;
+  color: #ff9900;
+  font-weight: 700;
 `
 
 export const Subtitle = styled.h2`
