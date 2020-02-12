@@ -25,6 +25,9 @@ export default function Destructuring ({data}) {
         <Links>
           <StyledLink to='destructuring/destructuring-objects/'>{data.markdownRemark.frontmatter.destructObj[0].title}</StyledLink>
         </Links>
+        <Links>
+          <StyledLink to='destructuring/destructuring-arrays/'>{data.markdownRemark.frontmatter.destructArray[0].title}</StyledLink>
+        </Links>
       </ContentInfos>
     </Content>
   )
@@ -40,6 +43,9 @@ export const pageQuery = graphql`
         infos
         date
         destructObj {
+          title
+        }
+        destructArray {
           title
         }
       }

@@ -133,6 +133,12 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
        <sub><b>Mauricio Soto</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/thiagopaiva99">
+        <img src="https://avatars0.githubusercontent.com/u/20430611?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Thiago Galvani</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  
