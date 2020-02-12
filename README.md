@@ -7,32 +7,32 @@
   </a>
 </p>
 <h1 align="center">
-  JavaScript Doc's made with Gatsby.
+  JavaScript Doc's feito com Gatsby.
 </h1>
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-This project was made to contribute to the Open Source World and for adquire more knowledge with this tools.
+Este projeto foi criado para contribuir com o mundo de código aberto e adquirir mais conhecimento com essas ferramentas.
 
-## 🚀 Fork and Contribute
+## 🚀 Fork e Contribuição
 
-1.  **Forking repository**
+1.  **Forkando o repositório**
 
-    Fork the repository and configure set-up UPSTREAM:
+    Fork o repositório e adicione-o como UPSTREAM:
 
     ```shell
     $ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
     ```
     
-    Check the repository:
+    Para checar o repositório:
     
     ```shell
     $ git remote -v
     ```
     
-1.  **Create a branch**
+1.  **Crie uma branch**
 
-    Navigate into the new site’s directory and start it up.
+    Navegue até o diretório raiz e inicie-o. Para isso execute:
 
     ```shell
     cd js-docs/
@@ -40,53 +40,53 @@ This project was made to contribute to the Open Source World and for adquire mor
     For example: git checkout -b feature-xyz
     ```
 
-1.  **Install dependencies**
+1.  **Instale as dependências**
 
-    Run the following commands above:
+    Para instalar as dependencias execute os seguintes comandos abaixo:
 
     ```shell
     cd js-docs/
     yarn install or npm install
     ```
 
-1.  **Start developing.**
+1.  **Comece a desenvolver**
 
-    Change to the repository directory on your computer (if you are not already there):
+    Mude para o diretório do repositório no seu computador (se você ainda não estiver lá):
 
     ```shell
     cd js-docs/
     yarn start or npm start
     ```
 
-1. **Create a new page**
+1. **Crie uma nova página**
 
-    To create more one page about javascript concepts, read about rules:
+    Para criar mais uma página sobre conceitos de javascript, leia sobre regras abaixo:
 
-    * Add a new folder into pages directory
-    * Create a archive `index.js` on the new folder created
-    * Create a markdown into markdown directory
+    * Adicione uma nova pasta ao diretório de páginas (pages)
+    * Crie um arquivo `index.js` na nova pasta criada
+    * Crie um `markdown` no diretório de `markdown`
     
-    _Note: Remember see if not exist a style that you want use. The principal styles are into `src/styles.js`_ 
+    _Nota: Lembre-se de ver se já não existe um estilo que você deseja usar. Os estilos principais estão em  `src/styles.js`_
 
-    _Note 2: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    _Nota 2: Você também deve ver um segundo link: _`http://localhost:8000/___graphql`_. Esta é uma ferramenta que você pode usar para experimentar a consulta de seus dados. Saiba mais sobre como usar esta ferramenta no [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-1.  **Make a PR (Pull Request)**
+1.  **Crie um PR (Pull Request)**
 
     ```shell
-    Don't forget to align the code with the master:
+    Não se esqueça de alinhar o código com a master:
     $ git pull upstream master
-    Submit the Pull Request to the repository on Github! And Be happy!
+    Envie Pull Request ao repositório no Github! E seja feliz!
     ```
 
-1.  **Open the source code and start editing!**
+1.  **Abra o código fonte e comece a editar!**
 
-    Your site is now running at `http://localhost:8000`!
+    A aplicação estará rodando atraveś do link `http://localhost:8000`!
 
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/)
 
-## 🎓 Authors / Contributors
+## 🎓 Autores / Colaboradores
 
 
 <table>
@@ -119,6 +119,12 @@ This project was made to contribute to the Open Source World and for adquire mor
       <a href="https://github.com/infinityover">
         <img src="https://avatars2.githubusercontent.com/u/13989817?s=460&v=4" width="100px;" alt=""/><br />
        <sub><b>Paulo Belfi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/bluuesz">
+        <img src="https://avatars3.githubusercontent.com/u/51493181?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Wosley Vacemberg</b></sub>
       </a>
     </td>
   </tr>

@@ -1,15 +1,11 @@
 import styled from "styled-components"
 
 export const FooterContent = styled.footer`
-  width: 83%;
   padding: 1rem;
-  border-top: 2px solid #ff9900;
   background-color: rgb(40, 44, 53);
   color: #fff;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
+  border-top: 2px solid rgb(255, 153, 0);
+  width: 83%;
 `
 
 export const FooterText = styled.p`

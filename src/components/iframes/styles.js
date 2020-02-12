@@ -16,6 +16,7 @@ export const IframesStyle = styled.iframe`
   @media (min-width: 1350px) {
     width: 40%;
   }
+
 `
 export const Container = styled.div`
   display: flex;
