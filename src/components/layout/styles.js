@@ -12,6 +12,7 @@ export const TitleMenu = styled.h1`
   text-align: center;
   margin-top: 15px;
   margin-bottom: 0;
+  width: 100%;
 
   @media (max-width: 768px) {
     margin-top: 37px;
@@ -242,3 +243,5 @@ export const StyledLink = styled(props => (
     color: #ff9900;
   }
 `
+
+export const MenuItems = styled.div``

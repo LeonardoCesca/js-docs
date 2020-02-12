@@ -21,6 +21,7 @@ import {
   TitleMenu,
   ContentHeader,
   ContentHeaderHamburger,
+  MenuItems,
 } from "./styles"
 
 import Footer from "../footer/index"
@@ -57,33 +58,33 @@ const Layout = ({ children }) => {
       </Helmet>
       <GlobalStyle />
       <>
-        <MenuHamburgerWrapper>
+        <MenuHamburgerWrapper onClick={() => setIsOpened(!isOpened)}
+          className={isOpened ? "opened" : "closed"}>
           <ContainerHamburguer />
         </MenuHamburgerWrapper>
-
-        <ContainerMenu
-          onClick={() => setIsOpened(!isOpened)}
-          className={isOpened ? "opened" : "closed"}
-        >
+        {isOpened ? (
+        <ContainerMenu>
           <ContentHeader>
             <ContentHeaderHamburger />
-            <TitleMenu>JavaScript Doc's</TitleMenu>
           </ContentHeader>
+            <TitleMenu>JavaScript Doc's</TitleMenu>
           <ContentMenu>
-            <SidebarItems to="/" activeClassName="active">
-              Home
-            </SidebarItems>
-            <SidebarItems to="/destructuring">Destructuring</SidebarItems>
-            <SidebarItems to="/function">Function</SidebarItems>
-            <SidebarItems to="/ternary-operator">Ternary Operator</SidebarItems>
-            <SidebarItems to="/if-else">If Else</SidebarItems>
-            <SidebarItems to="/for">Loop For</SidebarItems>
-            <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
-            <SidebarItems to="/spread-operator">Spread Operator</SidebarItems>
+            <MenuItems onClick={() => setIsOpened(!isOpened)}>
+              <SidebarItems to="/" activeClassName="active">
+                Home
+              </SidebarItems>
+              <SidebarItems to="/destructuring">Destructuring</SidebarItems>
+              <SidebarItems to="/function">Function</SidebarItems>
+              <SidebarItems to="/ternary-operator">Ternary Operator</SidebarItems>
+              <SidebarItems to="/if-else">If Else</SidebarItems>
+              <SidebarItems to="/for">Loop For</SidebarItems>
+              <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
+              <SidebarItems to="/spread-operator">Spread Operator</SidebarItems>
+            </MenuItems>
           </ContentMenu>
           <Footer made="Made with" />
         </ContainerMenu>
-
+        ): null}
         <HamburgerWrapper>
           <Hamburger
             className={isOpened ? "opened" : "closed"}
