@@ -6,7 +6,8 @@ export const ContributorsContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
   justify-content: center;
-
+  margin: 0 auto;
+  max-width: 900px;
   padding: 12px;
   border-radius: 5px;
 
@@ -19,10 +20,12 @@ export const ContributorsContainer = styled.section`
     padding: 10px 0;
     width: 8px;
   }
+
   ::-webkit-scrollbar-track {
     background: #373c48;
     border-radius: 20px;
   }
+
   ::-webkit-scrollbar-thumb {
     background: rgb(255, 153, 0);
     border-radius: 20px;
@@ -33,12 +36,13 @@ export const ContributorsContainer = styled.section`
     color: #000;
     display: flex;
     justify-content: center;
-
     padding: 12px;
     transition: all 0.2s ease-in-out;
+
     &:hover {
       opacity: 0.8;
     }
+
     & svg {
       color: #fff;
     }
@@ -59,6 +63,7 @@ export const ContributorsTitle = styled.p`
   font-size: 24px;
   color: #eeeeee;
   position: relative;
+
   &::after {
     content: "";
     height: 7px;
@@ -81,11 +86,8 @@ export const Author = styled.span`
 export const Box = styled.span`
   background: #363b47;
   margin: 8px;
-
   box-shadow: 0 2px 10px rgba(30, 31, 36, 0.6);
-
   border-radius: 4px;
-
   overflow: hidden;
   transition: all 0.3s ease-out;
 
@@ -98,6 +100,7 @@ function generateAnimation(one, two) {
     to {
       background: ${one};
     }
+
     from {
       background: ${two};
     }
@@ -107,6 +110,7 @@ function generateAnimation(one, two) {
   `
   return animation
 }
+
 export const BoxHeader = styled.header`
   width: 100%;
   height: 65px;
@@ -124,6 +128,7 @@ export const ImgContainer = styled.div`
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+
   img {
     border-radius: 50%;
     width: 100%;
