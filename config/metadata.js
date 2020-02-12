@@ -47,5 +47,11 @@ module.exports = {
       url_avatar: "https://avatars3.githubusercontent.com/u/51493181?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/wosley-vacemberg-97151318a/",
     },
+    {
+      name: "Mauricio Soto",
+      url_git: "https://github.com/Soto92",
+      url_avatar: "https://avatars1.githubusercontent.com/u/42532817?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/mauricio-soto-b52644171/",
+    },
   ],
 }
