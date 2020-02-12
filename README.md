@@ -124,7 +124,13 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
     <td align="center">
       <a href="https://github.com/bluuesz">
         <img src="https://avatars3.githubusercontent.com/u/51493181?s=460&v=4" width="100px;" alt=""/><br />
-       <sub><b>Wosley Vacemberg</b></sub>
+        <sub><b>Wosley V.</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Soto92">
+        <img src="https://avatars1.githubusercontent.com/u/42532817?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Mauricio Soto</b></sub>
       </a>
     </td>
   </tr>
