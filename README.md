@@ -86,8 +86,11 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/)
 
-## 🎓 Autores / Colaboradores
+## :question: Está em dúvida do que contribuir?
 
+_[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para contribuir!](https://github.com/LeonardoCesca/js-docs/projects/1)_
+
+## 🎓 Autores / Colaboradores
 
 <table>
   <tr>
