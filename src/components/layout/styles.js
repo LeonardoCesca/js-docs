@@ -230,10 +230,12 @@ export const Container = styled.div`
 `
 
 export const ContainerContent = styled.div`
-  &.blocked {
-    @media (max-width: 438px) {
+  height: 100vh;
+  overflow: auto;
+
+  @media (max-width: 438px) {
+    &.blocked {
       overflow: hidden;
-      height: 100vh;
     }
   }
 `
