@@ -128,6 +128,8 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
        <sub><b>Paulo Belfi</b></sub>
       </a>
     </td>
+  </tr>
+  <tr>
     <td align="center">
       <a href="https://github.com/bluuesz">
         <img src="https://avatars3.githubusercontent.com/u/51493181?s=460&v=4" width="100px;" alt=""/><br />
@@ -144,6 +146,12 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
       <a href="https://github.com/thiagopaiva99">
         <img src="https://avatars0.githubusercontent.com/u/20430611?s=460&v=4" width="100px;" alt=""/><br />
        <sub><b>Thiago Galvani</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/brscherer">
+        <img src="https://avatars0.githubusercontent.com/u/23034493?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Bruno Scherer</b></sub>
       </a>
     </td>
   </tr>

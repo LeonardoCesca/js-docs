@@ -1,6 +1,23 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
+
+const scrollbar = css`
+  ::-webkit-scrollbar {
+    padding: 10px 0;
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #373c48;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 153, 0);
+    border-radius: 20px;
+  }
+`
 
 export const TitleMenu = styled.h1`
   font-weight: bold;
@@ -19,16 +36,18 @@ export const TitleMenu = styled.h1`
   }
 `
 export const ContainerMenu = styled.aside`
-  top: 0;
-  bottom: 0;
   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   z-index: 30;
   background: #282c35;
-  left: 0;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
   border-right: 2px solid #ff9900;
   transition: all 0.2s ease-in-out;
 
@@ -73,20 +92,9 @@ export const ContentMenu = styled.div`
   overflow-y: auto;
   flex: 1;
   padding: 1rem 60px;
-
-  ::-webkit-scrollbar {
-    padding: 10px 0;
-    width: 8px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: #373c48;
-    border-radius: 20px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: rgb(255, 153, 0);
-    border-radius: 20px;
+  
+  @media (min-width: 438px) {
+    ${scrollbar}
   }
 `
 export const MenuHamburgerWrapper = styled.div`
@@ -209,14 +217,28 @@ export const ContainerLink = styled.div`
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
 
   @media (max-width: 438px) {
     flex-direction: column;
   }
+
+  @media (min-width: 438px) {
+    ${scrollbar}
+  }
 `
 
-export const ContainerContent = styled.div``
+export const ContainerContent = styled.div`
+  height: 100vh;
+  overflow: auto;
+
+  @media (max-width: 438px) {
+    &.blocked {
+      overflow: hidden;
+    }
+  }
+`
 
 export const StyledLink = styled(props => (
   <Link
