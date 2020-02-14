@@ -57,17 +57,22 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <GlobalStyle />
-      <>
-        <MenuHamburgerWrapper onClick={() => setIsOpened(!isOpened)}
-          className={isOpened ? "opened" : "closed"}>
-          <ContainerHamburguer />
-        </MenuHamburgerWrapper>
-        {isOpened ? (
+
+      <MenuHamburgerWrapper 
+        onClick={() => setIsOpened(!isOpened)}
+        className={isOpened ? "opened" : "closed"}
+      >
+        <ContainerHamburguer />
+      </MenuHamburgerWrapper>
+
+      {isOpened && (
         <ContainerMenu>
           <ContentHeader>
             <ContentHeaderHamburger />
           </ContentHeader>
-            <TitleMenu>JavaScript Doc's</TitleMenu>
+
+          <TitleMenu>JavaScript Doc's</TitleMenu>
+          
           <ContentMenu>
             <MenuItems onClick={() => setIsOpened(!isOpened)}>
               <SidebarItems to="/" activeClassName="active">
@@ -82,19 +87,24 @@ const Layout = ({ children }) => {
               <SidebarItems to="/spread-operator">Spread Operator</SidebarItems>
             </MenuItems>
           </ContentMenu>
+          
           <Footer made="Made with" />
         </ContainerMenu>
-        ): null}
-        <HamburgerWrapper>
-          <Hamburger
-            className={isOpened ? "opened" : "closed"}
-            onClick={() => setIsOpened(!isOpened)}
-          >
-            <HamburgerLine className={isOpened ? "opened" : "closed"} />
-          </Hamburger>
-        </HamburgerWrapper>
-      </>
-      <ContainerContent>{children}</ContainerContent>
+      )}
+
+      <HamburgerWrapper>
+        <Hamburger
+          className={isOpened ? "opened" : "closed"}
+          onClick={() => setIsOpened(!isOpened)}
+        >
+          <HamburgerLine className={isOpened ? "opened" : "closed"} />
+        </Hamburger>
+      </HamburgerWrapper>
+
+      <ContainerContent className={isOpened && "blocked"}>
+        {children}
+      </ContainerContent>
+
       <Corner />
     </Container>
   )

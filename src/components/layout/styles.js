@@ -19,16 +19,18 @@ export const TitleMenu = styled.h1`
   }
 `
 export const ContainerMenu = styled.aside`
-  top: 0;
-  bottom: 0;
   position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
   z-index: 30;
   background: #282c35;
-  left: 0;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  
   border-right: 2px solid #ff9900;
   transition: all 0.2s ease-in-out;
 
@@ -216,7 +218,14 @@ export const Container = styled.div`
   }
 `
 
-export const ContainerContent = styled.div``
+export const ContainerContent = styled.div`
+  &.blocked {
+    @media (max-width: 438px) {
+      overflow: hidden;
+      height: 100vh;
+    }
+  }
+`
 
 export const StyledLink = styled(props => (
   <Link
