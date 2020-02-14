@@ -59,5 +59,11 @@ module.exports = {
       url_avatar: "https://avatars0.githubusercontent.com/u/20430611?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/thiago-galvani/",
     },
+    {
+      name: "Bruno Scherer",
+      url_git: "https://github.com/brscherer",
+      url_avatar: "https://avatars0.githubusercontent.com/u/23034493?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/brunorphl/",
+    },
   ],
 }
