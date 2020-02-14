@@ -232,6 +232,7 @@ export const Container = styled.div`
 export const ContainerContent = styled.div`
   height: 100vh;
   overflow: auto;
+  ${scrollbar}
 
   @media (max-width: 438px) {
     &.blocked {
