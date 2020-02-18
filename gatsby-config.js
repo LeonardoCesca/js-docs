@@ -5,6 +5,11 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `JavaScript Doc's`,
+    description: `Projeto open-source que tem por objetivo contribuir com a comunidade Javascript.`,
+    siteUrl: 'https://javascript-docs.netlify.com/'
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,

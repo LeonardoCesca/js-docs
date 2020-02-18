@@ -4,11 +4,16 @@ import { graphql } from "gatsby"
 import { Content, Title, Paragraph } from "../../styles"
 
 import Iframes from "../../../components/iframes"
+import SEO from "../../../components/seo"
 
 export default function MapFilter({ data }) {
   const { mapWithFilter } = data.markdownRemark.frontmatter
   return (
     <Content>
+      <SEO
+        title={mapWithFilter[0].title}
+        description={mapWithFilter[1].subtitle}
+      />
       <Title>{mapWithFilter[0].title}</Title>
       <Paragraph>{mapWithFilter[1].subtitle}</Paragraph>
       <Iframes
