@@ -5,6 +5,7 @@ import { Content, Title, Paragraph, Links, ContentInfos } from "../styles"
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes"
+import SEO from "../../components/seo"
 
 export default function ArrayHelpers({ data }) {
   const {
@@ -15,6 +16,10 @@ export default function ArrayHelpers({ data }) {
   } = data.markdownRemark.frontmatter
   return (
     <Content>
+      <SEO
+        title={title}
+        description={subtitle}
+      />
       <Title>{title}</Title>
       <Paragraph>{subtitle}</Paragraph>
       <Title>Método Map</Title>

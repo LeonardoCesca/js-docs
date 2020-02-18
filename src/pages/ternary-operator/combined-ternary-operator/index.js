@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import { Content, Title, Paragraph } from "../../styles"
 
 import Iframes from "../../../components/iframes/"
+import SEO from "../../../components/seo"
 
 export default function CombinedTernaryOperator({ data }) {
   const { title } = data.markdownRemark.frontmatter.combinedTernaryOperator[0]
@@ -15,6 +16,10 @@ export default function CombinedTernaryOperator({ data }) {
   } = data.markdownRemark.frontmatter.combinedTernaryOperator[2]
   return (
     <Content>
+      <SEO
+        title={title}
+        description={subtitle}
+      />
       <Title>{title}</Title>
       <Paragraph>{subtitle}</Paragraph>
       <Paragraph>{explanation}</Paragraph>

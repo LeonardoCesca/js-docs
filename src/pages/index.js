@@ -3,10 +3,15 @@ import React from "react"
 import { Content, Title, Paragraph } from "./styles"
 
 import Contributors from "../components/contributors"
+import SEO from "../components/seo"
 
 export default function Home() {
   return (
     <Content>
+      <SEO
+        title="Página Inicial"
+        description="Seja bem vindo ao JavaScript Doc's"
+      />
       <Title>Seja bem vindo ao JavaScript Doc's</Title>
       <Paragraph>
         Este projeto foi desenvolvido com a tecnologia

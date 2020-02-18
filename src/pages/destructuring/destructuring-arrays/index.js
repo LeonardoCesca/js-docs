@@ -4,11 +4,16 @@ import { graphql } from 'gatsby';
 import { Content, Title, Paragraph } from '../../styles';
 
 import Iframes from '../../../components/iframes/';
+import SEO from '../../../components/seo';
 
 export default function DestructuringArrays ({data}) {
 
   return (
     <Content>
+      <SEO
+        title={data.markdownRemark.frontmatter.destructArray[0].title}
+        description={data.markdownRemark.frontmatter.destructArray[1].subtitle}
+      />
       <Title>
         {data.markdownRemark.frontmatter.destructArray[0].title}
       </Title>

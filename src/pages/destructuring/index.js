@@ -5,10 +5,15 @@ import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from '../sty
 import { StyledLink } from '../../components/layout/styles';
 
 import Iframes from '../../components/iframes/';
+import SEO from '../../components/seo';
 
 export default function Destructuring ({data}) {
   return (
     <Content>
+      <SEO
+        title={data.markdownRemark.frontmatter.title}
+        description={data.markdownRemark.frontmatter.subtitle}
+      />
       <Title>
         {data.markdownRemark.frontmatter.title}
       </Title>

@@ -5,6 +5,7 @@ import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../sty
 import { StyledLink } from "../../components/layout/styles"
 
 import Iframes from "../../components/iframes/"
+import SEO from "../../components/seo"
 
 export default function SpreadOperator({ data }) {
   const {
@@ -16,6 +17,10 @@ export default function SpreadOperator({ data }) {
   } = data.markdownRemark.frontmatter
   return (
     <Content>
+      <SEO
+        title={title}
+        description={subtitle}
+      />
       <Title>{title}</Title>
       <Paragraph>{subtitle}</Paragraph>
       <Iframes
