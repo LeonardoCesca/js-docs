@@ -39,6 +39,25 @@ export default function Json({ data }) {
             description="iframe JSON Example"
             url="https://jsfiddle.net/RenanSchmitt/xkhfgo9s/4/embedded/js/"
         />
+        <Subtitle>Trabalhando com JSON</Subtitle>
+        <Paragraph>
+          Trabalhar com o JSON é extramente simples, devido sua facil sintaxe, podemos ter acesso aos seus componentes utilizando suas chave, trabalhando com ele como um objeto Javascript, utilizando os códigos de exemplo logo acima, poderiamos acessar o conteudo de montadora da posição 0 do array de veiculos utilizando: " [0]["modelo"]";<br />
+          ou também podemos adicionar este JSON em uma variavel, criando assim um objeto Javascript que pode ser acessado através do seu "nome[ indice].suaChave", facilitando assim ainda mais o seu uso.
+        </Paragraph>
+        <Iframes
+            description="iframe JSON Example"
+            url="https://jsfiddle.net/RenanSchmitt/1r06p7ye/5/embedded/js/"
+        />
+
+        <Subtitle>Exemplo prático</Subtitle>
+        <Paragraph>
+          Logo abaixo temos um exemplo prático de como utilizar um JSON para preencher o valor de uma tag <b>&lt;li&gt;</b> do HTML através da manipulação do DOM.
+        </Paragraph>
+        <Iframes
+            description="iframe JSON Example"
+            url="https://jsfiddle.net/RenanSchmitt/4fp7xz0w/38/embedded/js,html,result/"
+        />
+
     </Content>
   )
 }
