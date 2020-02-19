@@ -7,7 +7,6 @@ export default function Json({ data }) {
   const {
     title,
     subtitle,
-    infos,
   } = data.markdownRemark.frontmatter
   return (
     <Content>
@@ -32,7 +31,7 @@ export default function Json({ data }) {
             description="iframe JSON Types Example"
             url="https://jsfiddle.net/RenanSchmitt/t4Lgky92/15/embedded/js/"
         />
-        <Subtitle>multiplos objetos</Subtitle>
+        <Subtitle>Multiplos objetos</Subtitle>
         <Paragraph>
             O JSON oferece a possibilidade de trabalhar com multiplos objetos dentro do mesmo, para fazer o uso de multiplos objetos é bastante simples, basta apenas você criar um novo jogo de chaves, separando cada novo objeto por virgula ","; para cada novo objeto criado o mesmo pode conter todas ou mesmo nenhuma das chaves do objeto anterior.  
         </Paragraph>
@@ -52,10 +51,6 @@ export const jsonQuery = graphql`
         subtitle
         explanation
         infos
-        date
-        forWithArrays {
-          title
-        }
       }
     }
   }
