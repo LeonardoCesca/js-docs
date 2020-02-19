@@ -69,7 +69,6 @@ export const jsonQuery = graphql`
         title
         subtitle
         explanation
-        infos
       }
     }
   }
