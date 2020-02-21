@@ -54,7 +54,6 @@ export default function Json({ data }) {
             description="iframe JSON Example"
             url="https://jsfiddle.net/RenanSchmitt/1r06p7ye/5/embedded/js/"
         />
-
         <Subtitle>Exemplo prático</Subtitle>
         <Paragraph>
           Logo abaixo temos um exemplo prático de como utilizar um JSON para preencher o valor de uma tag <b>&lt;li&gt;</b> do HTML através da manipulação do DOM.
