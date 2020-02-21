@@ -4,11 +4,16 @@ import { graphql } from "gatsby"
 import { Content, Title, Subtitle, Paragraph } from "../../styles"
 
 import Iframes from "../../../components/iframes/"
+import SEO from "../../../components/seo"
 
 export default function ForWithArrays({ data }) {
   const { forWithArrays } = data.markdownRemark.frontmatter
   return (
     <Content>
+      <SEO
+        title={forWithArrays[0].title}
+        description={forWithArrays[1].subtitle}
+      />
       <Title>{forWithArrays[0].title}</Title>
       <Paragraph>{forWithArrays[1].subtitle}</Paragraph>
       <Iframes
