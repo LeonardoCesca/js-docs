@@ -1,12 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
+import { StyledLink } from "../../components/layout/styles"
 import Iframes from "../../components/iframes/"
 
 export default function Json({ data }) {
   const {
     title,
     subtitle,
+    infos,
+    ifElse,
   } = data.markdownRemark.frontmatter
   return (
     <Content>
@@ -15,7 +18,8 @@ export default function Json({ data }) {
         <Subtitle>Sintaxe</Subtitle>
         <Paragraph>
             A sintaxe do JSON é bastante simples e muito semelhante aos objetos do Javascript, com facil implementação;
-            para implementar um JSON, será implementado um array de objetos, que para cada posição atribuida ao JSON irá conter um nome/rótulo conhecido como chave, que irá descrever seu significado(escrito entre aspas) e será utilizado na hora de referenciar-mos este valor,<br />
+            para implementar um JSON, será implementado um array de objetos, que para cada posição atribuida ao JSON irá conter um nome/rótulo conhecido como chave,
+             que irá descrever seu significado(escrito entre aspas) e será utilizado na hora de referenciar-mos este valor,<br />
             logo após a chave irá conter o seu valor referente separado por " : ".<br />
         </Paragraph>
         <Iframes
@@ -25,7 +29,8 @@ export default function Json({ data }) {
         <Subtitle>Tipo de dados</Subtitle>
         <Paragraph>
             Um JSON pode conter multiplas chaves e multiplos valores, onde os mesmos serão separados por virgula, <br />
-            este valores poderão ser do tipo simples: strings, boolean e numérico; porém também pode ser utilizado valores do tipo: array, objetos e vazio (lembrando que para representar valores nulos será necessário utilizar a palavra-chave " null ") <br />  
+            este valores poderão ser do tipo simples: strings, boolean e numérico; porém também pode ser utilizado valores do tipo: array, objetos e vazio
+             (lembrando que para representar valores nulos será necessário utilizar a palavra-chave " null ") <br />  
         </Paragraph>
         <Iframes
             description="iframe JSON Types Example"
@@ -42,7 +47,8 @@ export default function Json({ data }) {
         <Subtitle>Trabalhando com JSON</Subtitle>
         <Paragraph>
           Trabalhar com o JSON é extramente simples, devido sua facil sintaxe, podemos ter acesso aos seus componentes utilizando suas chave, trabalhando com ele como um objeto Javascript, utilizando os códigos de exemplo logo acima, poderiamos acessar o conteudo de montadora da posição 0 do array de veiculos utilizando: " [0]["modelo"]";<br />
-          ou também podemos adicionar este JSON em uma variavel, criando assim um objeto Javascript que pode ser acessado através do seu "nome[ indice].suaChave", facilitando assim ainda mais o seu uso.
+          ou também podemos adicionar este JSON em uma variavel, criando assim um objeto Javascript que pode ser acessado através do seu "nome[ indice].suaChave",
+           facilitando assim ainda mais o seu uso.
         </Paragraph>
         <Iframes
             description="iframe JSON Example"
@@ -57,7 +63,14 @@ export default function Json({ data }) {
             description="iframe JSON Example"
             url="https://jsfiddle.net/RenanSchmitt/4fp7xz0w/38/embedded/js,html,result/"
         />
-
+      <ContentInfos>
+        <Subtitle>{infos}</Subtitle>
+        <Links>
+          <StyledLink to="if-else">
+            {ifElse[0].title}
+          </StyledLink>
+        </Links>
+      </ContentInfos>
     </Content>
   )
 }
@@ -69,6 +82,10 @@ export const jsonQuery = graphql`
         title
         subtitle
         explanation
+        infos
+        ifElse {
+          title
+        }
       }
     }
   }
