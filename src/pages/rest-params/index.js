@@ -25,7 +25,7 @@ export default function RestParameters({ data }) {
       <Paragraph>{subtitle}</Paragraph>
       <Iframes
         description="iframe rest params"
-        url="//jsfiddle.net/coder404/v3o2s1Le/24/embedded/"
+        url="https://jsfiddle.net/coder404/v3o2s1Le/24/embedded/js/"
       />
         <Paragraph>{explanation}</Paragraph>
         <Paragraph>

@@ -34,7 +34,7 @@ export default function UndefinedNumberOfArguments({ data }) {
       </Paragraph>
       <Iframes
         description="iframe undefined number of arguments"
-        url="//jsfiddle.net/coder404/v3o2s1Le/12/embedded/"
+        url="https://jsfiddle.net/coder404/v3o2s1Le/12/embedded/js/"
       />
       <Paragraph>
         Como não sei a quantidade de argumentos que vou receber então passei o rest
