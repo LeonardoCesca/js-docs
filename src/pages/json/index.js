@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Content, Title, Subtitle, Paragraph } from "../styles"
 import Iframes from "../../components/iframes/"
+import SEO from "../../components/seo"
 
 export default function Json({ data }) {
   const {
@@ -10,6 +11,10 @@ export default function Json({ data }) {
   } = data.markdownRemark.frontmatter
   return (
     <Content>
+        <SEO
+          title={title}
+          description={subtitle}
+        />
         <Title>{title}</Title>
         <Paragraph>{subtitle}</Paragraph>
         <Subtitle>Sintaxe</Subtitle>
