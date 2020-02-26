@@ -65,5 +65,11 @@ module.exports = {
       url_avatar: "https://avatars0.githubusercontent.com/u/23034493?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/brunorphl/",
     },
+    {
+      name: "Renan Schmitt",
+      url_git: "https://github.com/RenanSchmitt",
+      url_avatar: "https://avatars1.githubusercontent.com/u/26446592?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/renanschmitt/",
+    },
   ],
 }
