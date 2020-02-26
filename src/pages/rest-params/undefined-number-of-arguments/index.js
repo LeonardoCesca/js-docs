@@ -25,7 +25,7 @@ export default function UndefinedNumberOfArguments({ data }) {
       <Paragraph>{explanation}</Paragraph>
       <Iframes
         description="iframe undefined number of arguments"
-        url="//jsfiddle.net/coder404/v3o2s1Le/10/embedded/"
+        url="https://jsfiddle.net/coder404/v3o2s1Le/10/embedded/js/"
       />
       <Paragraph>
         Repare como temos um código feio, e se formos adiconar mais argumentos
