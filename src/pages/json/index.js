@@ -1,15 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from "../styles"
-import { StyledLink } from "../../components/layout/styles"
+import { Content, Title, Subtitle, Paragraph } from "../styles"
 import Iframes from "../../components/iframes/"
 
 export default function Json({ data }) {
   const {
     title,
-    subtitle,
-    infos,
-    ifElse,
+    subtitle
   } = data.markdownRemark.frontmatter
   return (
     <Content>
@@ -62,14 +59,6 @@ export default function Json({ data }) {
             description="iframe JSON Example"
             url="https://jsfiddle.net/RenanSchmitt/4fp7xz0w/38/embedded/js,html,result/"
         />
-      <ContentInfos>
-        <Subtitle>{infos}</Subtitle>
-        <Links>
-          <StyledLink to="if-else">
-            {ifElse[0].title}
-          </StyledLink>
-        </Links>
-      </ContentInfos>
     </Content>
   )
 }
@@ -81,10 +70,6 @@ export const jsonQuery = graphql`
         title
         subtitle
         explanation
-        infos
-        ifElse {
-          title
-        }
       }
     }
   }
