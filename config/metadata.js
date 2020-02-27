@@ -71,5 +71,11 @@ module.exports = {
       url_avatar: "https://avatars1.githubusercontent.com/u/26446592?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/renanschmitt/",
     },
+    {
+      name: "Vinicius Gusmão",
+      url_git: "https://github.com/viniciusgusmao",
+      url_avatar: "https://avatars1.githubusercontent.com/u/17680680?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/viniciusogusmao/",
+    },
   ],
 }
