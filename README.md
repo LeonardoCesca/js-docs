@@ -166,6 +166,12 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
        <sub><b>Vinicius Gusmão</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/codder404">
+        <img src="https://avatars3.githubusercontent.com/u/39916301?s=400&v=4" width="100px;" alt=""/><br />
+       <sub><b>Fernando dos Santos</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  
