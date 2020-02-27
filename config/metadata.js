@@ -77,5 +77,10 @@ module.exports = {
       url_avatar: "https://avatars1.githubusercontent.com/u/17680680?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/viniciusogusmao/",
     },
+    {
+      name: "Fernando dos Santos",
+      url_git: "https://github.com/codder404",
+      url_avatar: "https://avatars3.githubusercontent.com/u/39916301?s=400&v=4",
+    },
   ],
 }
