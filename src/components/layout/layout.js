@@ -64,6 +64,7 @@ const Layout = ({ children }) => {
               <SidebarItems to="/for">Loop For</SidebarItems>
               <SidebarItems to="/array-helpers">Array Helpers</SidebarItems>
               <SidebarItems to="/spread-operator">Spread Operator</SidebarItems>
+              <SidebarItems to="/rest-params">Rest Parameters</SidebarItems>
               <SidebarItems to="/json">JSON</SidebarItems>
               <SidebarItems to="/closure">Closure</SidebarItems>
             </MenuItems>
