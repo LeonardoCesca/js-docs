@@ -160,6 +160,12 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
        <sub><b>Renan Schmitt</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/viniciusgusmao">
+        <img src="https://avatars1.githubusercontent.com/u/17680680?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Vinicius Gusmão</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  
