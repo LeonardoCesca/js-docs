@@ -82,5 +82,11 @@ module.exports = {
       url_git: "https://github.com/codder404",
       url_avatar: "https://avatars3.githubusercontent.com/u/39916301?s=400&v=4",
     },
+    {
+      name: "Aline Bastos",
+      url_git: "https://github.com/alinebastos",
+      url_avatar: "https://avatars1.githubusercontent.com/u/387470?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/alinebastos/",
+    },
   ],
 }
