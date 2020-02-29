@@ -30,6 +30,15 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
     $ git remote -v
     ```
     
+1.  **Instale as dependências**
+
+    Para instalar as dependencias execute os seguintes comandos abaixo:
+
+    ```shell
+    cd js-docs/
+    yarn install or npm install
+    ```
+    
 1.  **Crie uma branch**
 
     Navegue até o diretório raiz e inicie-o. Para isso execute:
@@ -38,15 +47,6 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
     cd js-docs/
     git checkout -b <add-your-new-branch-name>
     For example: git checkout -b feature-xyz
-    ```
-
-1.  **Instale as dependências**
-
-    Para instalar as dependencias execute os seguintes comandos abaixo:
-
-    ```shell
-    cd js-docs/
-    yarn install or npm install
     ```
 
 1.  **Comece a desenvolver**
