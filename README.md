@@ -172,6 +172,12 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
        <sub><b>Fernando dos Santos</b></sub>
       </a>
     </td>
+    <td align="center">
+      <a href="https://github.com/alinebastos">
+        <img src="https://avatars1.githubusercontent.com/u/387470?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Aline Bastos</b></sub>
+      </a>
+    </td>
   </tr>
  </table>
  
