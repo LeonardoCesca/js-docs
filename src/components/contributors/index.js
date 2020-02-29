@@ -58,7 +58,7 @@ export default function Contribuitors() {
   return (
     <ContributorsBox>
       <ContributorsTitleWrapper>
-        <ContributorsTitle>Contribuidores</ContributorsTitle>
+        <ContributorsTitle>Pessoas Contribuidoras</ContributorsTitle>
       </ContributorsTitleWrapper>
       <ContributorsContainer>{contributors}</ContributorsContainer>
     </ContributorsBox>
