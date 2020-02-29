@@ -12,7 +12,7 @@ export default function Home() {
         title="Página Inicial"
         description="Seja bem vindo ao JavaScript Doc's"
       />
-      <Title>Seja bem vindo ao JavaScript Doc's</Title>
+      <Title>Boas vindas ao JavaScript Doc's</Title>
       <Paragraph>
         Este projeto foi desenvolvido com a tecnologia
         <a
