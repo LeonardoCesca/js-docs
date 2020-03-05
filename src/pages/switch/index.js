@@ -25,16 +25,37 @@ export default function Switch({ data }) {
       <Paragraph>{subtitle}</Paragraph>
       <Iframes
         description="how to use switch"
-        url="https://jsfiddle.net/neriGabriel/sdb3q4ho/3/embedded/js/"
+        url="https://jsfiddle.net/neriGabriel/jxgpmLwe/7/embedded/js/"
       />
       <Subtitle>Explicação</Subtitle>
       <Paragraph>
-        A instrução switch avalia uma expressão caso a caso (case)< br />
-        Se o valor da avaliação for considerado como true, então é executado o bloco de comandos dentro do case, caso nenhuma comparação retornar true então podemos definir um valor default.
+        A instrução switch avalia uma expressão fornecida via parametro (podendo ser uma variavél, condição, string, booleano etc) caso a caso
+        se o valor da avaliação retornar true então o bloco de comandos dentro do caso é executado, caso nenhuma comparação retornar true então podemos
+        definir um case default.
       </Paragraph>
       <Iframes
         description="how to use switch with default"
         url="https://jsfiddle.net/neriGabriel/2k7ta0db/8/embedded/js/"
+      />
+      <Iframes
+        description="how to use switch with default 2"
+        url="https://jsfiddle.net/neriGabriel/6q8pr4tn/13/embedded/js/"
+      />
+      <Subtitle>Multi-avaliações</Subtitle>
+      <Paragraph>
+        A instrução switch permite tambem a multi-avaliação de parametros para a execução de um mesmo bloco de comandos.
+      </Paragraph>
+      <Iframes
+        description="how to use switch with default 2"
+        url="https://jsfiddle.net/neriGabriel/c2jm540u/8/embedded/js/"
+      />
+      <Subtitle>Exemplo de menu com a instrução switch</Subtitle>
+      <Paragraph>
+        A baixo um exemplo prático de um simples menu utilizando a instrução switch junto a cases mais elaborados.
+      </Paragraph>
+      <Iframes
+        description="how to use switch with default 3"
+        url="https://jsfiddle.net/neriGabriel/pqrbs7yt/13/embedded/js/"
       />
     </Content>
   )
