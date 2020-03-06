@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
     <Container>
       <GlobalStyle />
 
-      <MenuHamburgerWrapper 
+      <MenuHamburgerWrapper
         onClick={() => setIsOpened(!isOpened)}
         className={isOpened ? "opened" : "closed"}
       >
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
           </ContentHeader>
 
           <TitleMenu>JavaScript Doc's</TitleMenu>
-          
+
           <ContentMenu>
             <MenuItems onClick={() => setIsOpened(!isOpened)}>
               <SidebarItems to="/" activeClassName="active">
@@ -67,9 +67,10 @@ const Layout = ({ children }) => {
               <SidebarItems to="/rest-params">Rest Parameters</SidebarItems>
               <SidebarItems to="/json">JSON</SidebarItems>
               <SidebarItems to="/closure">Closure</SidebarItems>
+              <SidebarItems to="/switch">Switch</SidebarItems>
             </MenuItems>
           </ContentMenu>
-          
+
           <Footer made="Made with" />
         </ContainerMenu>
       )}
