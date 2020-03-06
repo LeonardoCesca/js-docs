@@ -88,5 +88,11 @@ module.exports = {
       url_avatar: "https://avatars1.githubusercontent.com/u/387470?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/alinebastos/",
     },
+    {
+      name: "Gabriel Neri",
+      url_git: "https://github.com/neriGabriel",
+      url_avatar: "https://avatars1.githubusercontent.com/u/16361235?s=460&v=4",
+      url_linkedin: "https://www.linkedin.com/in/nerigabriel/",
+    },
   ],
 }
