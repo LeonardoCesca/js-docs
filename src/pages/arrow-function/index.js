@@ -7,7 +7,7 @@ import { StyledLink } from "../../components/layout/styles"
 import Iframes from "../../components/iframes/"
 import SEO from "../../components/seo"
 
-export default function Switch({ data }) {
+export default function ArrowFunction({ data }) {
   const {
     title,
     subtitle,
