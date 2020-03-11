@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
               <SidebarItems to="/json">JSON</SidebarItems>
               <SidebarItems to="/closure">Closure</SidebarItems>
               <SidebarItems to="/switch">Switch</SidebarItems>
-		  	  <SidebarItems to="/arrow-function">Arrow Function</SidebarItems>
+		  	  <SidebarItems to="/string-padding">String Padding</SidebarItems>
             </MenuItems>
           </ContentMenu>
 
