@@ -27,8 +27,8 @@ export default function StringPadding({ data }) {
       <Subtitle>Explicação</Subtitle>
       <Paragraph>
         Os comandos padStart e padEnd são comumente utilizados em strings e sempre esperam no primeiro parametro um tamanho
-		    e caso esse tamanho for menor que tamanho da string
-		    nada é feito, caso seja maior é adionado um espaço(ou um valor pré-definido) no inicio ou fim respectivamente.
+	e caso esse tamanho for menor que tamanho da string
+	nada é feito, caso seja maior é adionado um espaço(ou um valor pré-definido) no inicio ou fim respectivamente.
       </Paragraph>
       <Iframes
         description="how to use string padding 2 "
