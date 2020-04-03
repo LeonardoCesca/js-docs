@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import { Content, Title, Subtitle, Paragraph, Links, ContentInfos } from '../styles';
+import { StyledLink } from '../../components/layout/styles';
 
 import Iframes from '../../components/iframes/';
 import SEO from '../../components/seo';
@@ -27,6 +28,9 @@ export default function Flat ({data}) {
           />
       <ContentInfos>
         <Subtitle>{data.markdownRemark.frontmatter.infos}</Subtitle>
+        <Links>
+          <StyledLink to='flat/flat-examples/'>{data.markdownRemark.frontmatter.flatExamples[0].title}</StyledLink>
+        </Links>
       </ContentInfos>
     </Content>
   )
@@ -43,6 +47,9 @@ export const pageQuery = graphql`
         explanation
         infos
         date
+        flatExamples {
+          title
+        }
       }
     }
   }
