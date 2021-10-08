@@ -94,5 +94,11 @@ module.exports = {
       url_avatar: "https://avatars1.githubusercontent.com/u/16361235?s=460&v=4",
       url_linkedin: "https://www.linkedin.com/in/nerigabriel/",
     },
+    {
+      name: "Alvaro Israel",
+      url_git: "https://github.com/AlvaroIsrael",
+      url_avatar: "https://avatars.githubusercontent.com/u/8402007?v=4",
+      url_linkedin: "http://www.linkedin.com/in/alvaroisraeldesenvolvedor",
+    },
   ],
 }
