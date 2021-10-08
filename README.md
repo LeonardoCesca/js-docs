@@ -3,7 +3,7 @@
     <img alt="Javasript" src="https://i.ya-webdesign.com/images/vector-javascript-1.png" width="60" />
   </a>
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -182,6 +182,14 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
       <a href="https://github.com/neriGabriel">
         <img src="https://avatars1.githubusercontent.com/u/16361235?s=460&v=4" width="100px;" alt=""/><br />
        <sub><b>Gabriel Neri</b></sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/AlvaroIsrael">
+        <img src="https://avatars1.githubusercontent.com/u/8402007?s=460&v=4" width="100px;" alt=""/><br />
+       <sub><b>Alvaro Israel</b></sub>
       </a>
     </td>
   </tr>
