@@ -32,7 +32,7 @@ Este projeto foi criado para contribuir com o mundo de código aberto e adquirir
     
 1.  **Instale as dependências**
 
-    Para instalar as dependencias execute os seguintes comandos abaixo:
+    Para instalar as dependências execute os seguintes comandos abaixo:
 
     ```shell
     cd js-docs/
@@ -190,6 +190,12 @@ _[Acesse o KANBAN do projeto, onde você encontrará dicas de tópicos para cont
       <a href="https://github.com/AlvaroIsrael">
         <img src="https://avatars1.githubusercontent.com/u/8402007?s=460&v=4" width="100px;" alt=""/><br />
        <sub><b>Alvaro Israel</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/edilsonmatola">
+        <img src="https://avatars.githubusercontent.com/u/85250817?v=4" width="100px;" alt="Edilson Matola"/><br />
+       <sub><b>Edilson Matola</b></sub>
       </a>
     </td>
   </tr>
