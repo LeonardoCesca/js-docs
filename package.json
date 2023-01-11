@@ -25,7 +25,7 @@
     "gatsby-plugin-styled-components": "^3.1.19",
     "gatsby-remark-responsive-iframe": "^2.2.31",
     "gatsby-source-filesystem": "^2.1.46",
-    "gatsby-transformer-remark": "^2.6.48",
+    "gatsby-transformer-remark": "^5.25.1",
     "react": "^16.12.0",
     "react-animations": "^1.0.0",
     "react-dom": "^16.12.0",
